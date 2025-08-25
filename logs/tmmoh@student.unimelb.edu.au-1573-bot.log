@@ -6718,3 +6718,464 @@ Goal is to BUY 1@990 or lower
 [2025-08-25 03:20:50,541:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
 [2025-08-25 03:20:50,541:               agent.DSBot]:     INFO - Shutting Down
 [2025-08-25 03:20:50,542:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-08-26 04:29:15 AEST] ===============================
+[2025-08-26 04:29:15,057:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-08-26 04:29:15,059:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-08-26 04:29:16,134:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-08-26 04:29:16,869:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-08-26 04:29:17,568:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-08-26 04:29:17,795:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:18.211.231.38:443
+[2025-08-26 04:29:18,712:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-08-26 04:29:18,713:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-08-26 04:29:18,713:               agent.DSBot]:  WARNING - There is a market with id: 2797| Private: False
+[2025-08-26 04:29:18,713:               agent.DSBot]:  WARNING - There is a market with id: 2798| Private: True
+[2025-08-26 04:29:18,714:               agent.DSBot]:     INFO - Session: SID:137484:SessionState.OPEN
+[2025-08-26 04:29:18,721:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT)}
+[2025-08-26 04:29:18,721:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,721:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,722:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,723:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,724:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,725:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,726:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,727:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,728:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,729:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,730:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,731:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,732:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,732:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,732:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,732:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,732:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:18,732:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:29:33,606:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-08-26 04:29:33,606:               agent.DSBot]:     INFO - Shutting Down
+[2025-08-26 04:29:33,606:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-08-26 04:30:10 AEST] ===============================
+[2025-08-26 04:30:10,046:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-08-26 04:30:10,047:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-08-26 04:30:11,941:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-08-26 04:30:12,739:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-08-26 04:30:13,450:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-08-26 04:30:13,677:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:18.211.231.38:443
+[2025-08-26 04:30:14,597:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-08-26 04:30:14,597:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-08-26 04:30:14,597:               agent.DSBot]:  WARNING - There is a market with id: 2797| Private: False
+[2025-08-26 04:30:14,598:               agent.DSBot]:  WARNING - There is a market with id: 2798| Private: True
+[2025-08-26 04:30:14,598:               agent.DSBot]:     INFO - Session: SID:137484:SessionState.OPEN
+[2025-08-26 04:30:14,605:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT)}
+[2025-08-26 04:30:14,605:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:30:14,605:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:30:14,605:               agent.DSBot]:  WARNING - No private incentive order available right now
+[2025-08-26 04:31:52,694:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033)}
+[2025-08-26 04:31:52,695:               agent.DSBot]:     INFO - Received BUY order on private market: 1@500
+[2025-08-26 04:31:52,695:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-08-26 04:31:52,695:               agent.DSBot]:     INFO - 	Goal is to BUY 1@490 or lower
+[2025-08-26 04:32:58,628:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033), 47033833: Order(47033833,Others,SELL,1@490,PUB,LIMIT)}
+[2025-08-26 04:32:58,628:               agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(47033833,Others,SELL,1@490,PUB,LIMIT)
+[2025-08-26 04:32:58,628:               agent.DSBot]:     INFO - 	Trade Margin:    10
+[2025-08-26 04:32:58,628:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-08-26 04:32:58,628:               agent.DSBot]:     INFO - 	Cash Available:  20000
+[2025-08-26 04:32:58,628:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-08-26 04:33:22,823:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033)}
+[2025-08-26 04:33:27,997:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-08-26 04:33:27,997:               agent.DSBot]:     INFO - Shutting Down
+[2025-08-26 04:33:27,997:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-08-26 04:35:05 AEST] ===============================
+[2025-08-26 04:35:05,581:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-08-26 04:35:05,582:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-08-26 04:35:06,686:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-08-26 04:35:07,493:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-08-26 04:35:08,215:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-08-26 04:35:08,441:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:54.235.77.118:443
+[2025-08-26 04:35:09,372:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-08-26 04:35:09,373:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-08-26 04:35:09,373:               agent.DSBot]:  WARNING - There is a market with id: 2797| Private: False
+[2025-08-26 04:35:09,374:               agent.DSBot]:  WARNING - There is a market with id: 2798| Private: True
+[2025-08-26 04:35:09,375:               agent.DSBot]:     INFO - Session: SID:137484:SessionState.OPEN
+[2025-08-26 04:35:09,385:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033)}
+[2025-08-26 04:35:09,386:               agent.DSBot]:     INFO - Received BUY order on private market: 1@500
+[2025-08-26 04:35:09,386:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-08-26 04:35:09,386:               agent.DSBot]:     INFO - 	Goal is to BUY 1@490 or lower
+[2025-08-26 04:35:09,386:               agent.DSBot]:  WARNING - Public Order(46997534,Others,SELL,5@517,PUB,LIMIT)
+[2025-08-26 04:35:09,386:               agent.DSBot]:  WARNING - Public Order(46997535,Others,SELL,5@810,PUB,LIMIT)
+[2025-08-26 04:35:09,386:               agent.DSBot]:  WARNING - Public Order(47032183,Others,BUY,1@100,PUB,LIMIT)
+[2025-08-26 04:35:09,387:               agent.DSBot]:  WARNING - Public Order(46979521,Others,SELL,1@315,PUB,LIMIT)
+[2025-08-26 04:35:09,387:               agent.DSBot]:  WARNING - Public Order(46979522,Others,BUY,1@315,PUB,LIMIT)
+[2025-08-26 04:35:09,387:               agent.DSBot]:  WARNING - Public Order(46979523,Others,SELL,1@315,PUB,LIMIT)
+[2025-08-26 04:35:09,387:               agent.DSBot]:  WARNING - Public Order(46979524,Others,BUY,1@315,PUB,LIMIT)
+[2025-08-26 04:35:09,387:               agent.DSBot]:  WARNING - Public Order(46979545,Others,SELL,1@146,PUB,LIMIT)
+[2025-08-26 04:35:09,387:               agent.DSBot]:  WARNING - Public Order(46979546,Others,BUY,1@146,PUB,LIMIT)
+[2025-08-26 04:35:09,387:               agent.DSBot]:  WARNING - Public Order(46979560,Others,BUY,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,387:               agent.DSBot]:  WARNING - Public Order(46979561,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,388:               agent.DSBot]:  WARNING - Public Order(46996337,Others,BUY,1@113,PUB,LIMIT)
+[2025-08-26 04:35:09,388:               agent.DSBot]:  WARNING - Public Order(46996338,Others,BUY,1@113,PUB,LIMIT)
+[2025-08-26 04:35:09,388:               agent.DSBot]:  WARNING - Public Order(46996339,Others,BUY,1@113,PUB,LIMIT)
+[2025-08-26 04:35:09,388:               agent.DSBot]:  WARNING - Public Order(46996340,Others,BUY,1@113,PUB,LIMIT)
+[2025-08-26 04:35:09,388:               agent.DSBot]:  WARNING - Public Order(46996899,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 04:35:09,388:               agent.DSBot]:  WARNING - Public Order(46997094,Others,BUY,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,389:               agent.DSBot]:  WARNING - Public Order(46997199,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,389:               agent.DSBot]:  WARNING - Public Order(46997200,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,389:               agent.DSBot]:  WARNING - Public Order(46997201,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,389:               agent.DSBot]:  WARNING - Public Order(46997202,Others,BUY,2@445,PUB,LIMIT)
+[2025-08-26 04:35:09,389:               agent.DSBot]:  WARNING - Public Order(46997203,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,389:               agent.DSBot]:  WARNING - Public Order(46997204,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,389:               agent.DSBot]:  WARNING - Public Order(46997205,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,390:               agent.DSBot]:  WARNING - Public Order(46997206,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,390:               agent.DSBot]:  WARNING - Public Order(46997207,Others,SELL,2@112,PUB,LIMIT)
+[2025-08-26 04:35:09,390:               agent.DSBot]:  WARNING - Public Order(46997208,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,390:               agent.DSBot]:  WARNING - Public Order(46997209,Others,SELL,1@113,PUB,LIMIT)
+[2025-08-26 04:35:09,390:               agent.DSBot]:  WARNING - Public Order(46997210,Others,SELL,2@112,PUB,LIMIT)
+[2025-08-26 04:35:09,390:               agent.DSBot]:  WARNING - Public Order(46997211,Others,SELL,1@113,PUB,LIMIT)
+[2025-08-26 04:35:09,390:               agent.DSBot]:  WARNING - Public Order(46997212,Others,SELL,1@113,PUB,LIMIT)
+[2025-08-26 04:35:09,390:               agent.DSBot]:  WARNING - Public Order(46997213,Others,SELL,2@112,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997214,Others,SELL,1@113,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997215,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997216,Others,BUY,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997217,Others,SELL,1@78,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997218,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997219,Others,BUY,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997220,Others,SELL,1@78,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997221,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 04:35:09,391:               agent.DSBot]:  WARNING - Public Order(46997223,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 04:35:09,392:               agent.DSBot]:  WARNING - Public Order(46997333,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,392:               agent.DSBot]:  WARNING - Public Order(46997334,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,392:               agent.DSBot]:  WARNING - Public Order(46997335,Others,BUY,2@445,PUB,LIMIT)
+[2025-08-26 04:35:09,392:               agent.DSBot]:  WARNING - Public Order(46997342,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,392:               agent.DSBot]:  WARNING - Public Order(46997343,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,392:               agent.DSBot]:  WARNING - Public Order(46997344,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,392:               agent.DSBot]:  WARNING - Public Order(46997347,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,392:               agent.DSBot]:  WARNING - Public Order(46997350,Others,SELL,1@344,PUB,LIMIT)
+[2025-08-26 04:35:09,393:               agent.DSBot]:  WARNING - Public Order(46997351,Others,BUY,1@344,PUB,LIMIT)
+[2025-08-26 04:35:09,393:               agent.DSBot]:  WARNING - Public Order(46997362,Others,BUY,1@141,PUB,LIMIT)
+[2025-08-26 04:35:09,393:               agent.DSBot]:  WARNING - Public Order(46997365,Others,SELL,1@141,PUB,LIMIT)
+[2025-08-26 04:35:09,393:               agent.DSBot]:  WARNING - Public Order(46997461,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 04:35:09,393:               agent.DSBot]:  WARNING - Public Order(46997464,Others,SELL,3@445,PUB,LIMIT)
+[2025-08-26 04:35:09,393:               agent.DSBot]:  WARNING - Public Order(46997465,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 04:35:09,393:               agent.DSBot]:  WARNING - Public Order(46997467,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997468,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997469,Others,BUY,2@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997472,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997473,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997474,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997477,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997479,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997481,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,394:               agent.DSBot]:  WARNING - Public Order(46997482,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997486,Others,BUY,1@543,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997487,Others,SELL,1@543,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997498,Others,BUY,1@587,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997501,Others,SELL,1@587,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997506,Others,BUY,3@445,PUB,CANCEL)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997517,Others,SELL,1@615,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997518,Others,BUY,1@615,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997522,Others,SELL,1@573,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997524,Others,BUY,1@573,PUB,LIMIT)
+[2025-08-26 04:35:09,395:               agent.DSBot]:  WARNING - Public Order(46997527,Others,BUY,3@445,PUB,CANCEL)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(46997531,Others,SELL,5@327,PUB,LIMIT)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(46997533,Others,SELL,2@327,PUB,LIMIT)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(46997534,Others,SELL,5@517,PUB,LIMIT)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(46997535,Others,SELL,5@810,PUB,LIMIT)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(46997728,Others,BUY,1@100,PUB,LIMIT)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(47002865,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(47002866,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(47002867,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(47002868,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(47002869,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,396:               agent.DSBot]:  WARNING - Public Order(47002870,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002872,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002873,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002875,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002877,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002880,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002901,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002902,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002904,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47002906,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47030657,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,397:               agent.DSBot]:  WARNING - Public Order(47030660,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030661,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030663,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030665,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030667,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030669,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030671,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030673,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030782,Others,SELL,1@100,PUB,LIMIT)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030875,Others,BUY,1@273,PUB,LIMIT)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47030876,Others,SELL,1@273,PUB,LIMIT)
+[2025-08-26 04:35:09,398:               agent.DSBot]:  WARNING - Public Order(47031071,Others,BUY,1@327,PUB,LIMIT)
+[2025-08-26 04:35:09,399:               agent.DSBot]:  WARNING - Public Order(47031072,Others,SELL,1@327,PUB,LIMIT)
+[2025-08-26 04:35:09,399:               agent.DSBot]:  WARNING - Public Order(47031073,Others,SELL,1@327,PUB,LIMIT)
+[2025-08-26 04:35:09,399:               agent.DSBot]:  WARNING - Public Order(47031074,Others,BUY,1@327,PUB,LIMIT)
+[2025-08-26 04:35:09,399:               agent.DSBot]:  WARNING - Public Order(47031365,Others,BUY,1@502,PUB,LIMIT)
+[2025-08-26 04:35:09,399:               agent.DSBot]:  WARNING - Public Order(47031529,Others,SELL,1@502,PUB,LIMIT)
+[2025-08-26 04:35:09,399:               agent.DSBot]:  WARNING - Public Order(47032183,Others,BUY,1@100,PUB,LIMIT)
+[2025-08-26 04:35:45,795:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033), 47033835: Order(47033835,Mine,BUY,1@500,PUB,LIMIT,REF:'fm-ui 3.4.0')}
+[2025-08-26 04:35:45,795:               agent.DSBot]:  WARNING - Public Order(47033835,Mine,BUY,1@500,PUB,LIMIT,REF:'fm-ui 3.4.0')
+[2025-08-26 04:36:05,787:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033)}
+[2025-08-26 04:36:05,788:               agent.DSBot]:  WARNING - Public Order(47033835,Mine,BUY,1@500,PUB,LIMIT,REF:'fm-ui 3.4.0')
+[2025-08-26 04:36:05,788:               agent.DSBot]:  WARNING - Public Order(47033836,Others,SELL,1@500,PUB,LIMIT)
+[2025-08-26 04:36:33,844:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-08-26 04:36:33,845:               agent.DSBot]:     INFO - Shutting Down
+[2025-08-26 04:36:33,845:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-08-26 05:11:21 AEST] ===============================
+[2025-08-26 05:11:21,412:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-08-26 05:11:21,413:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-08-26 05:11:22,837:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-08-26 05:11:23,627:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-08-26 05:11:24,345:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-08-26 05:11:24,573:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:18.211.231.38:443
+[2025-08-26 05:11:25,494:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-08-26 05:11:25,494:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-08-26 05:11:25,495:               agent.DSBot]:  WARNING - There is a market with id: 2797| Private: False
+[2025-08-26 05:11:25,495:               agent.DSBot]:  WARNING - There is a market with id: 2798| Private: True
+[2025-08-26 05:11:25,495:               agent.DSBot]:     INFO - Session: SID:137484:SessionState.OPEN
+[2025-08-26 05:11:25,502:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033)}
+[2025-08-26 05:11:25,503:               agent.DSBot]:     INFO - Received BUY order on private market: 1@500
+[2025-08-26 05:11:25,503:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-08-26 05:11:25,503:               agent.DSBot]:     INFO - 	Goal is to BUY 1@490 or lower
+[2025-08-26 05:11:25,503:               agent.DSBot]:  WARNING - Public Order(46997534,Others,SELL,5@517,PUB,LIMIT)
+[2025-08-26 05:11:25,503:               agent.DSBot]:  WARNING - Public Order(46997535,Others,SELL,5@810,PUB,LIMIT)
+[2025-08-26 05:11:25,503:               agent.DSBot]:  WARNING - Public Order(47032183,Others,BUY,1@100,PUB,LIMIT)
+[2025-08-26 05:11:25,503:               agent.DSBot]:  WARNING - Public Order(46979521,Others,SELL,1@315,PUB,LIMIT)
+[2025-08-26 05:11:25,503:               agent.DSBot]:  WARNING - Public Order(46979522,Others,BUY,1@315,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46979523,Others,SELL,1@315,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46979524,Others,BUY,1@315,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46979545,Others,SELL,1@146,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46979546,Others,BUY,1@146,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46979560,Others,BUY,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46979561,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46996337,Others,BUY,1@113,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46996338,Others,BUY,1@113,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46996339,Others,BUY,1@113,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46996340,Others,BUY,1@113,PUB,LIMIT)
+[2025-08-26 05:11:25,504:               agent.DSBot]:  WARNING - Public Order(46996899,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997094,Others,BUY,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997199,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997200,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997201,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997202,Others,BUY,2@445,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997203,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997204,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997205,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997206,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,505:               agent.DSBot]:  WARNING - Public Order(46997207,Others,SELL,2@112,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997208,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997209,Others,SELL,1@113,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997210,Others,SELL,2@112,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997211,Others,SELL,1@113,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997212,Others,SELL,1@113,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997213,Others,SELL,2@112,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997214,Others,SELL,1@113,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997215,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997216,Others,BUY,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997217,Others,SELL,1@78,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997218,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,506:               agent.DSBot]:  WARNING - Public Order(46997219,Others,BUY,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997220,Others,SELL,1@78,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997221,Others,SELL,1@112,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997223,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997333,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997334,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997335,Others,BUY,2@445,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997342,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997343,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997344,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,507:               agent.DSBot]:  WARNING - Public Order(46997347,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997350,Others,SELL,1@344,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997351,Others,BUY,1@344,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997362,Others,BUY,1@141,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997365,Others,SELL,1@141,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997461,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997464,Others,SELL,3@445,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997465,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997467,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997468,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,508:               agent.DSBot]:  WARNING - Public Order(46997469,Others,BUY,2@445,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997472,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997473,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997474,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997477,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997479,Others,BUY,3@445,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997481,Others,SELL,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997482,Others,BUY,1@445,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997486,Others,BUY,1@543,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997487,Others,SELL,1@543,PUB,LIMIT)
+[2025-08-26 05:11:25,509:               agent.DSBot]:  WARNING - Public Order(46997498,Others,BUY,1@587,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997501,Others,SELL,1@587,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997506,Others,BUY,3@445,PUB,CANCEL)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997517,Others,SELL,1@615,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997518,Others,BUY,1@615,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997522,Others,SELL,1@573,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997524,Others,BUY,1@573,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997527,Others,BUY,3@445,PUB,CANCEL)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997531,Others,SELL,5@327,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997533,Others,SELL,2@327,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997534,Others,SELL,5@517,PUB,LIMIT)
+[2025-08-26 05:11:25,510:               agent.DSBot]:  WARNING - Public Order(46997535,Others,SELL,5@810,PUB,LIMIT)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(46997728,Others,BUY,1@100,PUB,LIMIT)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002865,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002866,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002867,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002868,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002869,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002870,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002872,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002873,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,511:               agent.DSBot]:  WARNING - Public Order(47002875,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47002877,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47002880,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47002901,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47002902,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47002904,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47002906,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47030657,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47030660,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47030661,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47030663,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47030665,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,512:               agent.DSBot]:  WARNING - Public Order(47030667,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47030669,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47030671,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47030673,Others,SELL,2@500,PUB,CANCEL)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47030782,Others,SELL,1@100,PUB,LIMIT)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47030875,Others,BUY,1@273,PUB,LIMIT)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47030876,Others,SELL,1@273,PUB,LIMIT)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47031071,Others,BUY,1@327,PUB,LIMIT)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47031072,Others,SELL,1@327,PUB,LIMIT)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47031073,Others,SELL,1@327,PUB,LIMIT)
+[2025-08-26 05:11:25,513:               agent.DSBot]:  WARNING - Public Order(47031074,Others,BUY,1@327,PUB,LIMIT)
+[2025-08-26 05:11:25,514:               agent.DSBot]:  WARNING - Public Order(47031365,Others,BUY,1@502,PUB,LIMIT)
+[2025-08-26 05:11:25,514:               agent.DSBot]:  WARNING - Public Order(47031529,Others,SELL,1@502,PUB,LIMIT)
+[2025-08-26 05:11:25,514:               agent.DSBot]:  WARNING - Public Order(47032183,Others,BUY,1@100,PUB,LIMIT)
+[2025-08-26 05:11:25,514:               agent.DSBot]:  WARNING - Public Order(47033835,Mine,BUY,1@500,PUB,LIMIT,REF:'fm-ui 3.4.0')
+[2025-08-26 05:11:25,514:               agent.DSBot]:  WARNING - Public Order(47033836,Others,SELL,1@500,PUB,LIMIT)
+[2025-08-26 05:11:33,858:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033), 47034101: Order(47034101,Mine,BUY,1@500,PUB,LIMIT,REF:'fm-ui 3.4.0')}
+[2025-08-26 05:11:33,858:               agent.DSBot]:  WARNING - Public Order(47034101,Mine,BUY,1@500,PUB,LIMIT,REF:'fm-ui 3.4.0')
+[2025-08-26 05:11:38,793:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033)}
+[2025-08-26 05:11:38,793:               agent.DSBot]:  WARNING - Public Order(47034101,Mine,BUY,1@500,PUB,LIMIT,REF:'fm-ui 3.4.0')
+[2025-08-26 05:11:38,793:               agent.DSBot]:  WARNING - Public Order(47034102,Mine,BUY,1@500,PUB,CANCEL,REF:'fm-ui 3.4.0')
+[2025-08-26 05:11:55,780:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033), 47034103: Order(47034103,Others,SELL,1@490,PUB,LIMIT)}
+[2025-08-26 05:11:55,780:               agent.DSBot]:  WARNING - Public Order(47034103,Others,SELL,1@490,PUB,LIMIT)
+[2025-08-26 05:11:55,780:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47034103,Others,SELL,1@490,PUB,LIMIT)
+[2025-08-26 05:11:55,780:               agent.DSBot]:     INFO - 	Trade Margin:    10
+[2025-08-26 05:11:55,780:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-08-26 05:11:55,780:               agent.DSBot]:     INFO - 	Cash Available:  19500
+[2025-08-26 05:11:55,781:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-08-26 05:11:56,855:               agent.DSBot]:     INFO - Sent order Order(47034104,Mine,BUY,1@490,PUB,LIMIT) accepted
+[2025-08-26 05:11:56,856:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033), 47034103: Order(47034103,Others,SELL,1@490,PUB,LIMIT)}
+[2025-08-26 05:11:56,888:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033)}
+[2025-08-26 05:11:56,889:               agent.DSBot]:  WARNING - Public Order(47034103,Others,SELL,1@490,PUB,LIMIT)
+[2025-08-26 05:11:56,889:               agent.DSBot]:  WARNING - Public Order(47034104,Mine,BUY,1@490,PUB,LIMIT)
+[2025-08-26 05:13:04,176:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033), 47034105: Order(47034105,Others,SELL,1@490,PUB,LIMIT)}
+[2025-08-26 05:13:04,176:               agent.DSBot]:  WARNING - Public Order(47034105,Others,SELL,1@490,PUB,LIMIT)
+[2025-08-26 05:13:04,176:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47034105,Others,SELL,1@490,PUB,LIMIT)
+[2025-08-26 05:13:04,177:               agent.DSBot]:     INFO - 	Trade Margin:    10
+[2025-08-26 05:13:04,177:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-08-26 05:13:04,177:               agent.DSBot]:     INFO - 	Cash Available:  19010
+[2025-08-26 05:13:04,177:               agent.DSBot]:     INFO - 	Already have an open public order, cannot trade
+[2025-08-26 05:13:18,184:               agent.DSBot]:     INFO - {46997534: Order(46997534,Others,SELL,5@517,PUB,LIMIT), 46997535: Order(46997535,Others,SELL,5@810,PUB,LIMIT), 47032183: Order(47032183,Others,BUY,1@100,PUB,LIMIT), 47033832: Order(47033832,Others,BUY,1@500,PVT,LIMIT,PVT_FROM:T033)}
+[2025-08-26 05:13:18,184:               agent.DSBot]:  WARNING - Public Order(47034105,Others,SELL,1@490,PUB,LIMIT)
+[2025-08-26 05:13:18,185:               agent.DSBot]:  WARNING - Public Order(47034106,Others,SELL,1@490,PUB,CANCEL)
+[2025-08-26 05:13:32,258:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-08-26 05:13:32,258:               agent.DSBot]:     INFO - Shutting Down
+[2025-08-26 05:13:32,258:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
