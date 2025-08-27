@@ -5,6 +5,7 @@ This is a template for Project 1, Task 1 (Induced demand-supply)
 from enum import Enum
 from fmclient import Agent, OrderSide, Order, OrderType, Session, Holding, Market
 from typing import List, Optional
+import copy
 
 # Student details
 SUBMISSION = {"number": "1473198", "name": "Taher Mohamed"}
@@ -39,6 +40,8 @@ class DSBot(Agent):
         self._private_market: Optional[Market] = None
         self._role: Optional[Role] = None
         self._bot_type: BotType = bot_type
+        self._best_bid: Optional[Order] = None
+        self._best_ask: Optional[Order] = None
         self._target_order: Optional[Order] = None
         self._public_order: Optional[Order] = None
         self._waiting_for_server: bool = False
@@ -47,6 +50,34 @@ class DSBot(Agent):
     @property
     def role(self) -> Optional[Role]:
         return self._role
+
+    @property
+    def current_public_orders(self) -> list[Order]:
+        return [
+            o for o in Order.current().values()
+            if o.market == self._public_market
+        ]
+
+    @property
+    def current_private_orders(self) -> list[Order]:
+        return [
+            o for o in Order.current().values()
+            if o.market == self._private_market
+        ]
+
+    @property
+    def best_bid(self) -> Optional[Order]:
+        bids = [o for o in self.current_public_orders
+                if o.order_side == OrderSide.BUY
+                ]
+        return max(bids, key=lambda o: o.price) if bids else None
+
+    @property
+    def best_ask(self) -> Optional[Order]:
+        asks = [o for o in self.current_public_orders
+                if o.order_side == OrderSide.SELL
+                ]
+        return min(asks, key=lambda o: o.price) if asks else None
 
     def initialised(self) -> None:
         for market_id, market in self.markets.items():
@@ -62,13 +93,12 @@ class DSBot(Agent):
     def order_accepted(self, order: Order) -> None:
         self._waiting_for_server = False
         self.inform(f"Sent order {order} accepted")
-        self.inform(f"{Order.current()}")
 
         if order.market == self._public_market:
-            if order.is_cancelled:
-                self._public_order = None
-            else:
-                self._public_order = order
+            pass
+
+        if order.market == self._private_market:
+            pass
 
 
 
@@ -77,33 +107,30 @@ class DSBot(Agent):
         self.warning(f"Sent order {order} rejected {info}")
 
         # Recheck public orders for profitability
-
         if order.market == self._public_market:
             if self._bot_type == BotType.REACTIVE:
-                for o in Order.current().values():
-                    if o.market == self._public_market:
-                        self._handle_public_order(order)
+                if tradeable_order := self._check_trade_opportunity():
+                    self._trade_order(tradeable_order)
+                    # Potential infinite loop?
+        
+        if order.market == self._private_market:
+            pass
+
+    def _set_target_order(self, order: Optional[Order]) -> None:
+        self._target_order = order
+
+        if order is None:
+            self._role = None
+        else:
+            self._role = {
+                OrderSide.SELL: Role.SELLER,
+                OrderSide.BUY: Role.BUYER,
+            }[order.order_side]
 
     def _handle_private_order(self, order: Order) -> None:
-        if not order.is_private:
+        if order.market != self._private_market:
             self.error(f"Public order is being handled as private!")
             return
-
-        '''
-        self.warning(f"Order came in on private market: {order}")
-        self.warning(f"Balance {order.is_balance}")
-        self.warning(f"Cancelled {order.is_cancelled}")
-        self.warning(f"Consumed {order.is_consumed}")
-        self.warning(f"Partial {order.is_partial}")
-        self.warning(f"Partial Trade {order.is_partial_trade}")
-        self.warning(f"Pending {order.is_pending}")
-        self.warning(f"Split {order.is_split}")
-        self.warning(f"Traded {order.has_traded}")
-        self.warning(f"Consumer {order.consumer}")
-        self.warning(f"Traded Order {order.traded_order}")
-        # self.warning(f"cons id: {order.consumer_id}")
-        # does it matter if 0 or none?
-        '''
 
         # Do whatever checks needed to get new incentive orders
         
@@ -117,7 +144,10 @@ class DSBot(Agent):
                 f"Original target order is no longer available: "
                 f"{self._target_order}"
             ))
-            self._target_order = None
+            self._set_target_order(None)
+
+            for order in Order.my_current().values():
+                self._cancel_order(order)
             return
 
         # Ignore updates to any other orders or my orders
@@ -129,69 +159,199 @@ class DSBot(Agent):
         # Target order assignment assumes there is only ever
         # ONE incentive trade in the private market
         # Any other orders up to this point should have been ignored
-        try: 
-            self._role = {
-                OrderSide.SELL: Role.SELLER,
-                OrderSide.BUY: Role.BUYER,
-            }[order.order_side]
+        self._set_target_order(order)
+        
+        assert self.role is not None # Suppresses warning, checked already
+        assert self._target_order is not None
+        goal_message = {
+            Role.BUYER: (
+                f"\tGoal is to BUY"
+                f" {order.units}@{order.price - PROFIT_MARGIN}"
+                f" or lower"
+            ),
+            Role.SELLER: (
+                f"\tGoal is to SELL"
+                f" {order.units}@{order.price + PROFIT_MARGIN}"
+                f" or higher"
+            ),
+        }[self.role]
+        self.inform((
+            f"Received {order.order_side.name} "
+            f"order on private market: "
+            f"{order.units}@{order.price}"
+        ))
+        self.inform(f"\tTarget Profit Margin: {PROFIT_MARGIN}")
+        self.inform(goal_message)
+        
 
-        except KeyError:
-            self.error((
-                f"Order: {order}, has unexpected order side: "
-                f"{order.order_side}"
-            ))
-        
-        
-        role = self.role
-        if role is None:
-            self.error(f"Bot role not set!")
-        else:
-            goal_message = {
-                Role.BUYER: (
-                    f"\tGoal is to BUY"
-                    f" {order.units}@{order.price - PROFIT_MARGIN}"
-                    f" or lower"
-                ),
-                Role.SELLER: (
-                    f"\tGoal is to SELL"
-                    f" {order.units}@{order.price + PROFIT_MARGIN}"
-                    f" or higher"
-                ),
-            }[role]
-            self._target_order = order
-            self.inform((
-                f"Received {order.order_side.name} "
-                f"order on private market: "
-                f"{order.units}@{order.price}"
-            ))
-            self.inform(f"\tTarget Profit Margin: {PROFIT_MARGIN}")
-            self.inform(goal_message)
-        
-        # If in reactive mode, check order book for any profitable opportunities
-        # and handle them accordingly.
-        
-        if self._bot_type == BotType.REACTIVE:
-            for order in Order.current().values():
-                if order.market == self._public_market:
-                    self._handle_public_order(order)
-
-        # Otherwise if in proactive mode, place an order in the public market
+        # If in proactive mode, place an order in the public market
         # to match and set profitability or trade requirements
 
         # This requires checking if there are any of my orders still active,
         # cancelling them and sending a new one
+        # However, it is assumed from above that if incentives change
+        # then all orders are cancelled
+        # We only make it this far in the method if a new incentive is given
+        # Need to take into account min and max prices of the asset and
+        # how it relates to our profit margin, as well as cash/units
 
         if self._bot_type == BotType.PROACTIVE:
+            new_order = copy.copy(self._target_order)
+            new_order.market = self._public_market
+            new_order.units = 1
+            new_order.price = {
+                    OrderSide.BUY: self._target_order.price - PROFIT_MARGIN,
+                    OrderSide.SELL: self._target_order.price + PROFIT_MARGIN,
+            }[new_order.order_side]
+            
+            tradeable, msg = self._check_tradeable(new_order)
+            self.inform(f"Creating a proactive order {order}")
+            self.inform(msg)
+            if tradeable:
+                self._waiting_for_server = True
+                self.send_order(new_order)
             pass
+
+    def _check_role_and_target(self) -> bool:
+        if self.role is None:
+            self.warning(
+                f"Bot role not set!"
+                f"There currently aren't any active private incentives"
+             )
+            return False
+
+        return True
+    
+    def _trade_order(self, order: Order) -> None:
+        self.inform(f"Responding to order {order}")
+
+        new_order = Order.create_new(order.market)
+        new_order.price = order.price
+        new_order.units = 1
+        new_order.order_type = OrderType.LIMIT
+        new_order.order_side = {
+                OrderSide.BUY: OrderSide.SELL,
+                OrderSide.SELL: OrderSide.BUY,
+            }[order.order_side]
+        new_order.owner_or_target = order.owner_or_target
+        self._waiting_for_server = True
+        self.send_order(new_order)
+
+    def _cancel_order(self, order: Order) -> None:
+        if not order.mine:
+            self.error(f"Trying to cancel order {order} which is not mine!")
+            return
+
+        self.inform(f"Cancelling order {order}")
+
+        cancel_order = copy.copy(order)
+        cancel_order.order_type = OrderType.CANCEL
+        self._waiting_for_server = True
+        self.send_order(cancel_order)
+
+    def _check_trade_opportunity(self) -> Optional[Order]:
+        if not self._check_role_and_target():
+            return None
+
+        assert self.role is not None
+        assert self._target_order is not None
+
+        best_order = {
+            Role.BUYER: self.best_ask,
+            Role.SELLER: self.best_bid,
+        }[self.role]
+
+        if best_order is None:
+            return None
+
+        if self._check_profitable(best_order):
+            tradeable, message = self._check_tradeable(best_order)
+            self._print_trade_opportunity(best_order, message)
+
+            return best_order if tradeable else None
+        
+        return None
+
+
+    def _check_profitable(self, order: Order) -> bool:
+        if not self._check_role_and_target():
+            return False
+        assert self._target_order is not None
+
+        return ((
+            self.role == Role.BUYER
+            and order.order_side == OrderSide.SELL
+            and order.price < self._target_order.price
+            ) or (
+            self.role == Role.SELLER
+            and order.order_side == OrderSide.BUY
+            and order.price > self._target_order.price
+            )
+        )
+
+    def _print_trade_opportunity(self, order: Order, status: str) -> None:
+        if not self._check_role_and_target():
+            return
+
+        assert self.role is not None
+        assert self._target_order is not None
+
+        margin = abs(order.price - self._target_order.price)
+        units = self.holdings.assets[self._public_market].units_available
+
+        self.inform(f"I am a {self.role.name} with profitable order {order}")
+        self.inform(f"\tTrade Margin:    {margin}")
+        self.inform(f"\tRequired Margin: {PROFIT_MARGIN}")
+        self.inform(f"\tCash Available:  {self.holdings.cash_available}")
+        self.inform(f"\tUnits Available: {units}")
+        self.inform(status)
+
+    def _check_tradeable(self, order: Order) -> tuple[bool, str]:
+        if not self._check_role_and_target():
+            return (False, "")
+
+        assert self._target_order is not None
+
+        margin = abs(order.price - self._target_order.price)
+        units = self.holdings.assets[self._public_market].units_available
+
+        if margin < PROFIT_MARGIN:
+            msg = f"\tMargin is not sufficient to trade"
+            return (False, msg)
+        
+        if self.role == Role.BUYER and \
+           self.holdings.cash_available < order.price:
+            msg = f"\tCash available is not sufficient to trade"
+            return (False, msg)
+
+        if self.role == Role.SELLER and units < 1:
+            msg = f"\tUnits available is not sufficient to trade"
+            return (False, msg)
+
+        if self._waiting_for_server:
+            msg = f"\tStill waiting on server response, cannot trade"
+            return (False, msg)
+
+        if Order.my_current():
+            msg = f"\tAlready have an open public order, cannot trade"
+            return (False, msg)
+
+        #min_price = self.holdings.assets[self._public_market].
+
+        # All conditions for trading have been checked, finally trade
+        msg = f"\tAll conditions met to trade!"
+        return (True, msg)
+
 
 
     def _handle_public_order(self, order: Order) -> None:
-        if order.is_private:
+        if order.market != self._public_market:
             self.error(f"Private order is being handled as public!")
             return
 
         self.warning(f"Public {order}")
 
+        '''
         # If in proactive mode, just ignore any public orders
         # They currently have no impact on decision making for sending orders
         # However, this is something that can be implemented to increase profit
@@ -199,30 +359,18 @@ class DSBot(Agent):
         if self._bot_type == BotType.PROACTIVE:
             self.warning(f"Ignoring {order} while in proactive mode")
             return
+        '''
 
-        # In reactive mode, check order book for any profitable opportunities
-        # and handle them accordingly.
 
-        # Ignore updates to any other orders or my orders
-        if not order.is_pending:
-            return
-        if order.mine:
+        if not order.mine:
             return
 
-        if self._target_order is None:
-            self.warning(f"No private incentive order available right now")
-            return
+        # Check if public reactive or proactive order has been consumed
+        # Now we're allowed to send another
+        # Need to trade in the private market to take advantage of the arbitrage!
 
-        if self._evaluate_public_order(order):
-            # Conditions met, trade
-            new_order = Order.create_new(self._public_market)
-            new_order.price = order.price
-            new_order.units = 1
-            new_order.order_type = OrderType.LIMIT
-            new_order.order_side = OrderSide.BUY if self.role == Role.BUYER \
-                                    else OrderSide.SELL
-            self.send_order(new_order)
-            self._waiting_for_server = True
+        if order.has_traded and self._target_order and not self._waiting_for_server:
+            self._trade_order(self._target_order)
 
 
 
@@ -245,60 +393,30 @@ class DSBot(Agent):
             self._handle_private_order(order)
         for order in public_orders:
             self._handle_public_order(order)
+
+        # If in reactive mode, check order book for any profitable opportunities
+        # and handle them accordingly on every update
         
-    def _evaluate_public_order(self, order: Order) -> bool:
-        if self._target_order is None:
-            self.error(f"Evaluating an order without a target incentive!")
-            return False
+        if self._bot_type == BotType.REACTIVE:
+            if tradeable_order := self._check_trade_opportunity():
+                self._trade_order(tradeable_order)
 
-        if (self.role == Role.BUYER
-            and order.order_side == OrderSide.SELL
-            and order.price < self._target_order.price
-        ):
-            return self._print_trade_opportunity(order)
+        # If it any point I have an open private order, something has gone wrong
+        # Likely incentive got cancelled as trade was being sent
+        # Cancel open trades
 
-        if (self.role == Role.SELLER
-            and order.order_side == OrderSide.BUY
-            and order.price > self._target_order.price
-        ):
-            return self._print_trade_opportunity(order)
+        my_private_orders = [o for o in Order.my_current().values() 
+                             if o.market == self._private_market]
 
-        if self.role == None:
-            self.error(f"Bot role not set!")
+        for order in my_private_orders:
+            self.error(f"{order} open in the private market! Cancelling it...")
+            if self._waiting_for_server:
+                self.error(f"Waiting for server, can't cancel now...")
+                continue
 
-        return False
-
-    def _print_trade_opportunity(self, order: Order) -> bool:
-        if self._target_order is None:
-            self.error(f"Evaluating a trade without a target incentive!")
-            return False
-
-        margin = abs(order.price - self._target_order.price)
-
-        self.inform(f"I am a {self.role.name} with profitable order {order}")
-        self.inform(f"\tTrade Margin:    {margin}")
-        self.inform(f"\tRequired Margin: {PROFIT_MARGIN}")
-
-        if margin < PROFIT_MARGIN:
-            self.inform(f"\tMargin is not sufficient to trade")
-            return False
+            self._cancel_order(order)
         
-        self.inform(f"\tCash Available:  {self.holdings.cash_available}")
-        if self.holdings.cash_available < order.price:
-            self.inform(f"\tCash available is not sufficient to trade")
-            return False
 
-        if self._waiting_for_server:
-            self.inform(f"\tStill waiting on server response, cannot trade")
-            return False
-
-        if self._public_order is not None:
-            self.inform(f"\tAlready have an open public order, cannot trade")
-            return False
-
-        # All conditions for trading have been checked, finally trade
-        self.inform(f"\tAll conditions met to trade!")
-        return True
 
 
     def received_holdings(self, holdings: Holding):
@@ -342,6 +460,6 @@ if __name__ == "__main__":
         FM_EMAIL, 
         FM_PASSWORD, 
         MARKETPLACE_ID, 
-        BotType.REACTIVE
+        BotType.PROACTIVE
     )
     ds_bot.run()
