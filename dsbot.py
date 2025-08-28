@@ -11,7 +11,7 @@ import copy
 SUBMISSION = {"number": "1473198", "name": "Taher Mohamed"}
 
 # ------ Add a variable called PROFIT_MARGIN -----
-PROFIT_MARGIN = 10 # Cents
+PROFIT_MARGIN = 250 # Cents
 
 # Enum for the roles of the bot
 class Role(Enum):
@@ -43,7 +43,7 @@ class DSBot(Agent):
         self._best_bid: Optional[Order] = None
         self._best_ask: Optional[Order] = None
         self._target_order: Optional[Order] = None
-        self._public_order: Optional[Order] = None
+        self._public_order_pending: bool = False
         self._waiting_for_server: bool = False
 
 
@@ -95,7 +95,13 @@ class DSBot(Agent):
         self.inform(f"Sent order {order} accepted")
 
         if order.market == self._public_market:
-            pass
+            if order.order_type == OrderType.LIMIT:
+                self._public_order_pending = True
+            if order.order_type == OrderType.CANCEL:
+                self._public_order_pending = False
+
+                if self._bot_type == BotType.PROACTIVE:
+                    self._proactive_order()
 
         if order.market == self._private_market:
             pass
@@ -146,8 +152,10 @@ class DSBot(Agent):
             ))
             self._set_target_order(None)
 
+            # Incentive cancelled, cancel any open orders to reevaluate
             for order in Order.my_current().values():
                 self._cancel_order(order)
+
             return
 
         # Ignore updates to any other orders or my orders
@@ -160,8 +168,9 @@ class DSBot(Agent):
         # ONE incentive trade in the private market
         # Any other orders up to this point should have been ignored
         self._set_target_order(order)
+
         
-        assert self.role is not None # Suppresses warning, checked already
+        assert self.role is not None # Suppresses warning 
         assert self._target_order is not None
         goal_message = {
             Role.BUYER: (
@@ -190,27 +199,17 @@ class DSBot(Agent):
         # This requires checking if there are any of my orders still active,
         # cancelling them and sending a new one
         # However, it is assumed from above that if incentives change
-        # then all orders are cancelled
+        # then all orders are cancelled -> BUGGY IF DISCONNECT WITH ACTIVE ORDER
         # We only make it this far in the method if a new incentive is given
         # Need to take into account min and max prices of the asset and
         # how it relates to our profit margin, as well as cash/units
 
+        # Incentive cancelled, cancel any open orders to reevaluate
+        for order in Order.my_current().values():
+            self._cancel_order(order)
+
         if self._bot_type == BotType.PROACTIVE:
-            new_order = copy.copy(self._target_order)
-            new_order.market = self._public_market
-            new_order.units = 1
-            new_order.price = {
-                    OrderSide.BUY: self._target_order.price - PROFIT_MARGIN,
-                    OrderSide.SELL: self._target_order.price + PROFIT_MARGIN,
-            }[new_order.order_side]
-            
-            tradeable, msg = self._check_tradeable(new_order)
-            self.inform(f"Creating a proactive order {order}")
-            self.inform(msg)
-            if tradeable:
-                self._waiting_for_server = True
-                self.send_order(new_order)
-            pass
+            self._proactive_order()
 
     def _check_role_and_target(self) -> bool:
         if self.role is None:
@@ -236,6 +235,33 @@ class DSBot(Agent):
         new_order.owner_or_target = order.owner_or_target
         self._waiting_for_server = True
         self.send_order(new_order)
+
+    def _proactive_order(self) -> None:
+        if self._bot_type != BotType.PROACTIVE:
+            self.error(f"Trying to send a proactive order in a different mode")
+            return 
+
+        if not self._check_role_and_target():
+            return
+
+        assert self.role is not None
+        assert self._target_order is not None
+        assert self._public_market is not None
+
+        new_order = copy.copy(self._target_order)
+        new_order.market = self._public_market
+        new_order.units = 1
+        new_order.price = {
+                OrderSide.BUY: self._target_order.price - PROFIT_MARGIN,
+                OrderSide.SELL: self._target_order.price + PROFIT_MARGIN,
+        }[new_order.order_side]
+        
+        tradeable, msg = self._check_tradeable(new_order)
+        self.inform(f"Creating a proactive order {new_order}")
+        self.inform(msg)
+        if tradeable:
+            self._waiting_for_server = True
+            self.send_order(new_order)
 
     def _cancel_order(self, order: Order) -> None:
         if not order.mine:
@@ -295,6 +321,7 @@ class DSBot(Agent):
 
         assert self.role is not None
         assert self._target_order is not None
+        assert self._public_market is not None
 
         margin = abs(order.price - self._target_order.price)
         units = self.holdings.assets[self._public_market].units_available
@@ -311,6 +338,7 @@ class DSBot(Agent):
             return (False, "")
 
         assert self._target_order is not None
+        assert self._public_market is not None
 
         margin = abs(order.price - self._target_order.price)
         units = self.holdings.assets[self._public_market].units_available
@@ -369,7 +397,12 @@ class DSBot(Agent):
         # Now we're allowed to send another
         # Need to trade in the private market to take advantage of the arbitrage!
 
-        if order.has_traded and self._target_order and not self._waiting_for_server:
+        if (order.has_traded 
+            and self._target_order 
+            and not self._waiting_for_server
+            and self._public_order_pending
+        ):
+            self._public_order_pending = False
             self._trade_order(self._target_order)
 
 
@@ -377,9 +410,17 @@ class DSBot(Agent):
     def received_orders(self, orders: List[Order]) -> None:
         self.inform(f"{Order.current()}")
 
+        if self._bot_type == BotType.REACTIVE:
+            for order in Order.my_current().values():
+                self.error(
+                    f"Order {order} didn't trade in reactive mode"
+                    f"Cancelling it now..."
+                )
+
         # We want to handle private orders first to make sure info is updated
         private_orders = []
         public_orders = []
+
 
         for order in orders:
             if order.market == self._private_market:
@@ -420,7 +461,22 @@ class DSBot(Agent):
 
 
     def received_holdings(self, holdings: Holding):
-        pass
+        assert self._public_market is not None
+        assert self._private_market is not None
+
+        # Use this to trade in the private market whenever there is an
+        # imbalance in holdings, which is assumed to only happen when
+        # public trades happen
+        pub_init = holdings.assets[self._public_market].units_initial
+        pub_curr = holdings.assets[self._public_market].units
+        pvt_init = holdings.assets[self._private_market].units_initial
+        pvt_curr = holdings.assets[self._private_market].units
+        total_init = pub_init + pvt_init
+        total_curr = pub_curr + pvt_curr
+
+        self.inform(f"HOLDINGS INIT: {pub_init}, {pvt_init}")
+        self.inform(f"HOLDINGS NOW: {pub_curr}, {pvt_curr}")
+
 
     def received_session_info(self, session: Session):
         pass
@@ -446,6 +502,15 @@ class DSBot(Agent):
 
 5. Can we assume that once order is accepted, order book reflects immediately?
 
+6. I'm always interacting in the public market first, which means I might not
+    have enough assets to trade that I *could* get by trading in private first
+
+7. Can we modify print trade opportunity
+
+8. Do we have to track _role or can it stay just a property?
+
+9. If my bot disconnects and misses an incentive refresh, that
+
 '''
 
 
@@ -453,7 +518,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "coltish-charity"
     FM_EMAIL = "tmmoh@student.unimelb.edu.au"
     FM_PASSWORD = "1473198"
-    MARKETPLACE_ID = 1573
+    MARKETPLACE_ID = 1579
 
     ds_bot = DSBot(
         FM_ACCOUNT, 
