@@ -14804,3 +14804,624 @@ Goal is to BUY 1@990 or lower
 [2025-08-28 09:11:47,310:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
 [2025-08-28 09:11:47,310:               agent.DSBot]:     INFO - Shutting Down
 [2025-08-28 09:11:47,310:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-09-02 12:49:52 AEST] ===============================
+[2025-09-02 12:49:52,569:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-09-02 12:49:52,571:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-09-02 12:49:53,782:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-09-02 12:49:54,781:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-09-02 12:49:55,573:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-09-02 12:49:55,819:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:54.235.77.118:443
+[2025-09-02 12:49:56,827:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-09-02 12:49:56,828:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-09-02 12:49:56,829:               agent.DSBot]:     INFO - There is a market with id: 2797| Private: False
+[2025-09-02 12:49:56,829:               agent.DSBot]:     INFO - There is a market with id: 2798| Private: True
+[2025-09-02 12:49:56,832:               agent.DSBot]:     INFO - Session: SID:138068:SessionState.OPEN
+[2025-09-02 12:49:56,845:               agent.DSBot]:     INFO - {}
+[2025-09-02 12:49:56,846:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:50:41,486:               agent.DSBot]:     INFO - Session: SID:138068:SessionState.OPEN
+[2025-09-02 12:50:41,694:               agent.DSBot]:     INFO - {}
+[2025-09-02 12:50:41,694:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:50:59,591:               agent.DSBot]:     INFO - {47498407: Order(47498407,Others,BUY,5@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:50:59,591:               agent.DSBot]:     INFO - Received BUY order on private market: 5@491
+[2025-09-02 12:50:59,591:               agent.DSBot]:     INFO - 	Target Profit Margin: 250
+[2025-09-02 12:50:59,591:               agent.DSBot]:     INFO - 	Goal is to BUY 5@241 or lower
+[2025-09-02 12:51:07,313:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-09-02 12:51:07,313:               agent.DSBot]:     INFO - Shutting Down
+[2025-09-02 12:51:07,313:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-09-02 12:51:24 AEST] ===============================
+[2025-09-02 12:51:24,131:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-09-02 12:51:24,132:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-09-02 12:51:25,446:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-09-02 12:51:26,232:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-09-02 12:51:27,009:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-09-02 12:51:27,254:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:18.211.231.38:443
+[2025-09-02 12:51:28,250:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-09-02 12:51:28,250:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-09-02 12:51:28,250:               agent.DSBot]:     INFO - There is a market with id: 2797| Private: False
+[2025-09-02 12:51:28,250:               agent.DSBot]:     INFO - There is a market with id: 2798| Private: True
+[2025-09-02 12:51:28,251:               agent.DSBot]:     INFO - Session: SID:138068:SessionState.OPEN
+[2025-09-02 12:51:28,254:               agent.DSBot]:     INFO - {47498407: Order(47498407,Others,BUY,5@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:51:28,254:               agent.DSBot]:     INFO - Received BUY order on private market: 5@491
+[2025-09-02 12:51:28,254:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:51:28,255:               agent.DSBot]:     INFO - 	Goal is to BUY 5@481 or lower
+[2025-09-02 12:51:28,255:               agent.DSBot]:     INFO - Creating a proactive order Order(47498407,Others,BUY,1@481,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:28,255:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:51:28,761:               agent.DSBot]:     INFO - Sent order Order(47498408,Mine,BUY,1@481,PUB,LIMIT) accepted
+[2025-09-02 12:51:28,764:               agent.DSBot]:     INFO - {47498407: Order(47498407,Others,BUY,5@491,PVT,LIMIT,PVT_FROM:T033), 47498408: Order(47498408,Mine,BUY,1@481,PUB,LIMIT)}
+[2025-09-02 12:51:40,136:               agent.DSBot]:     INFO - {47498407: Order(47498407,Others,BUY,5@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:51:40,136:               agent.DSBot]:     INFO - Responding to order Order(47498407,Others,BUY,5@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:40,458:               agent.DSBot]:     INFO - Sent order Order(47498410,Mine,SELL,1@491,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:51:40,545:               agent.DSBot]:     INFO - {47498412: Order(47498412,Others,BUY,4@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:51:40,546:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498407,Others,BUY,5@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:40,546:               agent.DSBot]:     INFO - Received BUY order on private market: 4@491
+[2025-09-02 12:51:40,546:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:51:40,546:               agent.DSBot]:     INFO - 	Goal is to BUY 4@481 or lower
+[2025-09-02 12:51:40,546:               agent.DSBot]:     INFO - Creating a proactive order Order(47498412,Others,BUY,1@481,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:40,546:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:51:40,973:               agent.DSBot]:     INFO - Sent order Order(47498413,Mine,BUY,1@481,PUB,LIMIT) accepted
+[2025-09-02 12:51:41,061:               agent.DSBot]:     INFO - {47498412: Order(47498412,Others,BUY,4@491,PVT,LIMIT,PVT_FROM:T033), 47498413: Order(47498413,Mine,BUY,1@481,PUB,LIMIT)}
+[2025-09-02 12:51:43,047:               agent.DSBot]:     INFO - {47498412: Order(47498412,Others,BUY,4@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:51:43,048:               agent.DSBot]:     INFO - Responding to order Order(47498412,Others,BUY,4@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:43,538:               agent.DSBot]:     INFO - Sent order Order(47498415,Mine,SELL,1@491,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:51:43,585:               agent.DSBot]:     INFO - {47498417: Order(47498417,Others,BUY,3@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:51:43,585:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498412,Others,BUY,4@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:43,585:               agent.DSBot]:     INFO - Received BUY order on private market: 3@491
+[2025-09-02 12:51:43,585:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:51:43,585:               agent.DSBot]:     INFO - 	Goal is to BUY 3@481 or lower
+[2025-09-02 12:51:43,586:               agent.DSBot]:     INFO - Creating a proactive order Order(47498417,Others,BUY,1@481,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:43,586:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:51:43,586:               agent.DSBot]:     INFO - {47498417: Order(47498417,Others,BUY,3@491,PVT,LIMIT,PVT_FROM:T033), 47498418: Order(47498418,Others,SELL,1@481,PUB,LIMIT)}
+[2025-09-02 12:51:44,050:               agent.DSBot]:     INFO - Sent order Order(47498419,Mine,BUY,1@481,PUB,LIMIT) accepted
+[2025-09-02 12:51:44,099:               agent.DSBot]:     INFO - {47498417: Order(47498417,Others,BUY,3@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:51:44,099:               agent.DSBot]:     INFO - Responding to order Order(47498417,Others,BUY,3@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:44,589:               agent.DSBot]:     INFO - Sent order Order(47498420,Mine,SELL,1@491,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:51:44,608:               agent.DSBot]:     INFO - {47498422: Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:51:44,608:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498417,Others,BUY,3@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:44,609:               agent.DSBot]:     INFO - Received BUY order on private market: 2@491
+[2025-09-02 12:51:44,609:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:51:44,609:               agent.DSBot]:     INFO - 	Goal is to BUY 2@481 or lower
+[2025-09-02 12:51:44,609:               agent.DSBot]:     INFO - Creating a proactive order Order(47498422,Others,BUY,1@481,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:51:44,610:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:51:45,099:               agent.DSBot]:     INFO - Sent order Order(47498423,Mine,BUY,1@481,PUB,LIMIT) accepted
+[2025-09-02 12:51:45,121:               agent.DSBot]:     INFO - {47498422: Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033), 47498423: Order(47498423,Mine,BUY,1@481,PUB,LIMIT)}
+[2025-09-02 12:51:48,366:               agent.DSBot]:     INFO - {47498422: Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033), 47498423: Order(47498423,Mine,BUY,1@481,PUB,LIMIT), 47498424: Order(47498424,Others,SELL,1@483,PUB,LIMIT)}
+[2025-09-02 12:51:51,955:               agent.DSBot]:     INFO - {47498422: Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033), 47498423: Order(47498423,Mine,BUY,1@481,PUB,LIMIT)}
+[2025-09-02 12:51:54,034:               agent.DSBot]:     INFO - {47498422: Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033), 47498423: Order(47498423,Mine,BUY,1@481,PUB,LIMIT), 47498426: Order(47498426,Others,SELL,3@483,PUB,LIMIT)}
+[2025-09-02 12:52:02,995:               agent.DSBot]:     INFO - {47498422: Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033), 47498423: Order(47498423,Mine,BUY,1@481,PUB,LIMIT)}
+[2025-09-02 12:52:04,409:               agent.DSBot]:     INFO - {47498422: Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033), 47498430: Order(47498430,Others,SELL,2@481,PUB,LIMIT)}
+[2025-09-02 12:52:04,410:               agent.DSBot]:     INFO - Responding to order Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:05,543:               agent.DSBot]:     INFO - Sent order Order(47498431,Mine,SELL,1@491,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:52:05,631:               agent.DSBot]:     INFO - {47498430: Order(47498430,Others,SELL,2@481,PUB,LIMIT), 47498433: Order(47498433,Others,BUY,1@491,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:52:05,631:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498422,Others,BUY,2@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:05,631:               agent.DSBot]:     INFO - Received BUY order on private market: 1@491
+[2025-09-02 12:52:05,631:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:52:05,631:               agent.DSBot]:     INFO - 	Goal is to BUY 1@481 or lower
+[2025-09-02 12:52:05,632:               agent.DSBot]:     INFO - Creating a proactive order Order(47498433,Others,BUY,1@481,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:05,632:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:52:06,069:               agent.DSBot]:     INFO - Sent order Order(47498434,Mine,BUY,1@481,PUB,LIMIT) accepted
+[2025-09-02 12:52:06,143:               agent.DSBot]:     INFO - {47498433: Order(47498433,Others,BUY,1@491,PVT,LIMIT,PVT_FROM:T033), 47498436: Order(47498436,Others,SELL,1@481,PUB,LIMIT)}
+[2025-09-02 12:52:06,144:               agent.DSBot]:     INFO - Responding to order Order(47498433,Others,BUY,1@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:06,593:               agent.DSBot]:     INFO - Sent order Order(47498437,Mine,SELL,1@491,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:52:06,650:               agent.DSBot]:     INFO - {47498436: Order(47498436,Others,SELL,1@481,PUB,LIMIT)}
+[2025-09-02 12:52:06,650:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498433,Others,BUY,1@491,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:17,725:               agent.DSBot]:     INFO - {}
+[2025-09-02 12:52:28,087:               agent.DSBot]:     INFO - {47498439: Order(47498439,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:52:28,087:               agent.DSBot]:     INFO - Received SELL order on private market: 5@387
+[2025-09-02 12:52:28,087:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:52:28,088:               agent.DSBot]:     INFO - 	Goal is to SELL 5@397 or higher
+[2025-09-02 12:52:28,088:               agent.DSBot]:     INFO - Creating a proactive order Order(47498439,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:28,088:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:52:29,301:               agent.DSBot]:     INFO - Sent order Order(47498440,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:52:29,303:               agent.DSBot]:     INFO - {47498439: Order(47498439,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033), 47498440: Order(47498440,Mine,SELL,1@397,PUB,LIMIT)}
+[2025-09-02 12:52:48,581:               agent.DSBot]:     INFO - {47498439: Order(47498439,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033), 47498443: Order(47498443,Others,BUY,4@610,PUB,LIMIT)}
+[2025-09-02 12:52:48,582:               agent.DSBot]:     INFO - Responding to order Order(47498439,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:49,646:               agent.DSBot]:     INFO - Sent order Order(47498444,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:52:49,709:               agent.DSBot]:     INFO - {47498443: Order(47498443,Others,BUY,4@610,PUB,LIMIT), 47498446: Order(47498446,Others,SELL,4@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:52:49,709:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498439,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:49,709:               agent.DSBot]:     INFO - Received SELL order on private market: 4@387
+[2025-09-02 12:52:49,709:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:52:49,709:               agent.DSBot]:     INFO - 	Goal is to SELL 4@397 or higher
+[2025-09-02 12:52:49,710:               agent.DSBot]:     INFO - Creating a proactive order Order(47498446,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:49,710:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:52:50,187:               agent.DSBot]:     INFO - Sent order Order(47498447,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:52:50,225:               agent.DSBot]:     INFO - {47498446: Order(47498446,Others,SELL,4@387,PVT,LIMIT,PVT_FROM:T033), 47498450: Order(47498450,Others,BUY,3@610,PUB,LIMIT)}
+[2025-09-02 12:52:50,225:               agent.DSBot]:     INFO - Responding to order Order(47498446,Others,SELL,4@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:50,709:               agent.DSBot]:     INFO - Sent order Order(47498451,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:52:50,731:               agent.DSBot]:     INFO - {47498450: Order(47498450,Others,BUY,3@610,PUB,LIMIT), 47498453: Order(47498453,Others,SELL,3@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:52:50,732:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498446,Others,SELL,4@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:50,732:               agent.DSBot]:     INFO - Received SELL order on private market: 3@387
+[2025-09-02 12:52:50,732:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:52:50,732:               agent.DSBot]:     INFO - 	Goal is to SELL 3@397 or higher
+[2025-09-02 12:52:50,732:               agent.DSBot]:     INFO - Creating a proactive order Order(47498453,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:50,733:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:52:51,241:               agent.DSBot]:     INFO - Sent order Order(47498454,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:52:51,244:               agent.DSBot]:     INFO - {47498453: Order(47498453,Others,SELL,3@387,PVT,LIMIT,PVT_FROM:T033), 47498457: Order(47498457,Others,BUY,2@610,PUB,LIMIT)}
+[2025-09-02 12:52:51,244:               agent.DSBot]:     INFO - Responding to order Order(47498453,Others,SELL,3@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:51,766:               agent.DSBot]:     INFO - Sent order Order(47498458,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:52:51,861:               agent.DSBot]:     INFO - {47498457: Order(47498457,Others,BUY,2@610,PUB,LIMIT), 47498460: Order(47498460,Others,SELL,2@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:52:51,862:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498453,Others,SELL,3@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:51,862:               agent.DSBot]:     INFO - Received SELL order on private market: 2@387
+[2025-09-02 12:52:51,862:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:52:51,862:               agent.DSBot]:     INFO - 	Goal is to SELL 2@397 or higher
+[2025-09-02 12:52:51,862:               agent.DSBot]:     INFO - Creating a proactive order Order(47498460,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:51,862:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:52:52,304:               agent.DSBot]:     INFO - Sent order Order(47498461,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:52:52,377:               agent.DSBot]:     INFO - {47498460: Order(47498460,Others,SELL,2@387,PVT,LIMIT,PVT_FROM:T033), 47498464: Order(47498464,Others,BUY,1@610,PUB,LIMIT)}
+[2025-09-02 12:52:52,377:               agent.DSBot]:     INFO - Responding to order Order(47498460,Others,SELL,2@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:52,831:               agent.DSBot]:     INFO - Sent order Order(47498465,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:52:52,894:               agent.DSBot]:     INFO - {47498464: Order(47498464,Others,BUY,1@610,PUB,LIMIT), 47498467: Order(47498467,Others,SELL,1@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:52:52,894:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498460,Others,SELL,2@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:52,894:               agent.DSBot]:     INFO - Received SELL order on private market: 1@387
+[2025-09-02 12:52:52,894:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:52:52,894:               agent.DSBot]:     INFO - 	Goal is to SELL 1@397 or higher
+[2025-09-02 12:52:52,895:               agent.DSBot]:     INFO - Creating a proactive order Order(47498467,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:52,895:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:52:53,352:               agent.DSBot]:     INFO - Sent order Order(47498468,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:52:53,409:               agent.DSBot]:     INFO - {47498467: Order(47498467,Others,SELL,1@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:52:53,409:               agent.DSBot]:     INFO - Responding to order Order(47498467,Others,SELL,1@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:51,221:               agent.DSBot]:     INFO - Sent order Order(47498470,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:52:51,275:               agent.DSBot]:     INFO - {}
+[2025-09-02 12:52:51,276:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498467,Others,SELL,1@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:52:55,581:               agent.DSBot]:     INFO - {47498471: Order(47498471,Others,BUY,5@610,PUB,LIMIT)}
+[2025-09-02 12:52:56,286:               agent.DSBot]:     INFO - {47498471: Order(47498471,Others,BUY,5@610,PUB,LIMIT), 47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT)}
+[2025-09-02 12:53:16,851:               agent.DSBot]:     INFO - {47498471: Order(47498471,Others,BUY,5@610,PUB,LIMIT), 47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498473: Order(47498473,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:53:16,851:               agent.DSBot]:     INFO - Received SELL order on private market: 5@387
+[2025-09-02 12:53:16,851:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:53:16,852:               agent.DSBot]:     INFO - 	Goal is to SELL 5@397 or higher
+[2025-09-02 12:53:16,852:               agent.DSBot]:     INFO - Creating a proactive order Order(47498473,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:16,852:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:53:18,193:               agent.DSBot]:     INFO - Sent order Order(47498474,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:53:18,290:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498473: Order(47498473,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033), 47498477: Order(47498477,Others,BUY,4@610,PUB,LIMIT)}
+[2025-09-02 12:53:18,290:               agent.DSBot]:     INFO - Responding to order Order(47498473,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:18,717:               agent.DSBot]:     INFO - Sent order Order(47498478,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:53:18,805:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498477: Order(47498477,Others,BUY,4@610,PUB,LIMIT), 47498480: Order(47498480,Others,SELL,4@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:53:18,805:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498473,Others,SELL,5@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:18,805:               agent.DSBot]:     INFO - Received SELL order on private market: 4@387
+[2025-09-02 12:53:18,805:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:53:18,805:               agent.DSBot]:     INFO - 	Goal is to SELL 4@397 or higher
+[2025-09-02 12:53:18,806:               agent.DSBot]:     INFO - Creating a proactive order Order(47498480,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:18,806:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:53:19,253:               agent.DSBot]:     INFO - Sent order Order(47498481,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:53:19,328:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498480: Order(47498480,Others,SELL,4@387,PVT,LIMIT,PVT_FROM:T033), 47498484: Order(47498484,Others,BUY,3@610,PUB,LIMIT)}
+[2025-09-02 12:53:19,328:               agent.DSBot]:     INFO - Responding to order Order(47498480,Others,SELL,4@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:19,788:               agent.DSBot]:     INFO - Sent order Order(47498485,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:53:19,839:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498484: Order(47498484,Others,BUY,3@610,PUB,LIMIT), 47498487: Order(47498487,Others,SELL,3@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:53:19,840:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498480,Others,SELL,4@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:19,840:               agent.DSBot]:     INFO - Received SELL order on private market: 3@387
+[2025-09-02 12:53:19,840:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:53:19,840:               agent.DSBot]:     INFO - 	Goal is to SELL 3@397 or higher
+[2025-09-02 12:53:19,840:               agent.DSBot]:     INFO - Creating a proactive order Order(47498487,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:19,841:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:53:20,326:               agent.DSBot]:     INFO - Sent order Order(47498488,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:53:20,362:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498487: Order(47498487,Others,SELL,3@387,PVT,LIMIT,PVT_FROM:T033), 47498491: Order(47498491,Others,BUY,2@610,PUB,LIMIT)}
+[2025-09-02 12:53:20,362:               agent.DSBot]:     INFO - Responding to order Order(47498487,Others,SELL,3@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:20,857:               agent.DSBot]:     INFO - Sent order Order(47498492,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:53:20,877:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498491: Order(47498491,Others,BUY,2@610,PUB,LIMIT), 47498494: Order(47498494,Others,SELL,2@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:53:20,877:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498487,Others,SELL,3@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:20,877:               agent.DSBot]:     INFO - Received SELL order on private market: 2@387
+[2025-09-02 12:53:20,878:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:53:20,878:               agent.DSBot]:     INFO - 	Goal is to SELL 2@397 or higher
+[2025-09-02 12:53:20,878:               agent.DSBot]:     INFO - Creating a proactive order Order(47498494,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:20,878:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:53:21,406:               agent.DSBot]:     INFO - Sent order Order(47498495,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:53:21,499:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498494: Order(47498494,Others,SELL,2@387,PVT,LIMIT,PVT_FROM:T033), 47498498: Order(47498498,Others,BUY,1@610,PUB,LIMIT)}
+[2025-09-02 12:53:21,500:               agent.DSBot]:     INFO - Responding to order Order(47498494,Others,SELL,2@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:21,945:               agent.DSBot]:     INFO - Sent order Order(47498499,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:53:22,008:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498498: Order(47498498,Others,BUY,1@610,PUB,LIMIT), 47498501: Order(47498501,Others,SELL,1@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:53:22,008:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498494,Others,SELL,2@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:22,008:               agent.DSBot]:     INFO - Received SELL order on private market: 1@387
+[2025-09-02 12:53:22,009:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:53:22,009:               agent.DSBot]:     INFO - 	Goal is to SELL 1@397 or higher
+[2025-09-02 12:53:22,009:               agent.DSBot]:     INFO - Creating a proactive order Order(47498501,Others,SELL,1@397,PUB,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:22,009:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:53:22,469:               agent.DSBot]:     INFO - Sent order Order(47498502,Mine,SELL,1@397,PUB,LIMIT) accepted
+[2025-09-02 12:53:22,519:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT), 47498501: Order(47498501,Others,SELL,1@387,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:53:22,519:               agent.DSBot]:     INFO - Responding to order Order(47498501,Others,SELL,1@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:22,982:               agent.DSBot]:     INFO - Sent order Order(47498504,Mine,BUY,1@387,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:53:23,034:               agent.DSBot]:     INFO - {47498472: Order(47498472,Others,BUY,5@610,PUB,LIMIT)}
+[2025-09-02 12:53:23,034:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498501,Others,SELL,1@387,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:53:24,059:               agent.DSBot]:     INFO - {}
+[2025-09-02 12:53:36,243:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-09-02 12:53:36,244:               agent.DSBot]:     INFO - Shutting Down
+[2025-09-02 12:53:36,244:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-09-02 12:53:45 AEST] ===============================
+[2025-09-02 12:53:45,818:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-09-02 12:53:45,819:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-09-02 12:53:47,297:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-09-02 12:53:48,186:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-09-02 12:53:49,017:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-09-02 12:53:49,261:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:54.205.8.205:443
+[2025-09-02 12:53:50,276:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-09-02 12:53:50,277:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-09-02 12:53:50,278:               agent.DSBot]:     INFO - There is a market with id: 2797| Private: False
+[2025-09-02 12:53:50,278:               agent.DSBot]:     INFO - There is a market with id: 2798| Private: True
+[2025-09-02 12:53:50,280:               agent.DSBot]:     INFO - Session: SID:138068:SessionState.OPEN
+[2025-09-02 12:53:50,288:               agent.DSBot]:     INFO - {}
+[2025-09-02 12:53:50,289:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:54:12,451:               agent.DSBot]:     INFO - {47498506: Order(47498506,Others,BUY,5@716,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:54:12,451:               agent.DSBot]:     INFO - Received BUY order on private market: 5@716
+[2025-09-02 12:54:12,451:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:54:12,451:               agent.DSBot]:     INFO - 	Goal is to BUY 5@706 or lower
+[2025-09-02 12:54:29,866:               agent.DSBot]:     INFO - {47498506: Order(47498506,Others,BUY,5@716,PVT,LIMIT,PVT_FROM:T033), 47498507: Order(47498507,Others,SELL,3@610,PUB,LIMIT)}
+[2025-09-02 12:54:29,867:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498507,Others,SELL,3@610,PUB,LIMIT)
+[2025-09-02 12:54:29,867:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:29,867:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:29,867:               agent.DSBot]:     INFO - 	Cash Available:  22067
+[2025-09-02 12:54:29,867:               agent.DSBot]:     INFO - 	Units Available: 15
+[2025-09-02 12:54:29,867:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:54:29,868:               agent.DSBot]:     INFO - Responding to order Order(47498507,Others,SELL,3@610,PUB,LIMIT)
+[2025-09-02 12:54:31,585:               agent.DSBot]:     INFO - Sent order Order(47498508,Mine,BUY,1@610,PUB,LIMIT) accepted
+[2025-09-02 12:54:31,615:               agent.DSBot]:     INFO - {47498506: Order(47498506,Others,BUY,5@716,PVT,LIMIT,PVT_FROM:T033), 47498510: Order(47498510,Others,SELL,2@610,PUB,LIMIT)}
+[2025-09-02 12:54:31,615:               agent.DSBot]:     INFO - Responding to order Order(47498506,Others,BUY,5@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:31,615:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498510,Others,SELL,2@610,PUB,LIMIT)
+[2025-09-02 12:54:31,615:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:31,616:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:31,616:               agent.DSBot]:     INFO - 	Cash Available:  22067
+[2025-09-02 12:54:31,616:               agent.DSBot]:     INFO - 	Units Available: 15
+[2025-09-02 12:54:31,616:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 12:54:32,115:               agent.DSBot]:     INFO - Sent order Order(47498511,Mine,SELL,1@716,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:54:32,132:               agent.DSBot]:     INFO - {47498510: Order(47498510,Others,SELL,2@610,PUB,LIMIT), 47498513: Order(47498513,Others,BUY,4@716,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:54:32,132:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498506,Others,BUY,5@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:32,132:               agent.DSBot]:     INFO - Received BUY order on private market: 4@716
+[2025-09-02 12:54:32,133:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:54:32,133:               agent.DSBot]:     INFO - 	Goal is to BUY 4@706 or lower
+[2025-09-02 12:54:32,133:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498510,Others,SELL,2@610,PUB,LIMIT)
+[2025-09-02 12:54:32,133:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:32,133:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:32,133:               agent.DSBot]:     INFO - 	Cash Available:  21457
+[2025-09-02 12:54:32,134:               agent.DSBot]:     INFO - 	Units Available: 16
+[2025-09-02 12:54:32,134:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:54:32,134:               agent.DSBot]:     INFO - Responding to order Order(47498510,Others,SELL,2@610,PUB,LIMIT)
+[2025-09-02 12:54:32,636:               agent.DSBot]:     INFO - Sent order Order(47498514,Mine,BUY,1@610,PUB,LIMIT) accepted
+[2025-09-02 12:54:32,649:               agent.DSBot]:     INFO - {47498513: Order(47498513,Others,BUY,4@716,PVT,LIMIT,PVT_FROM:T033), 47498516: Order(47498516,Others,SELL,1@610,PUB,LIMIT)}
+[2025-09-02 12:54:32,649:               agent.DSBot]:     INFO - Responding to order Order(47498513,Others,BUY,4@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:32,649:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498516,Others,SELL,1@610,PUB,LIMIT)
+[2025-09-02 12:54:32,649:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:32,649:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:32,649:               agent.DSBot]:     INFO - 	Cash Available:  22173
+[2025-09-02 12:54:32,649:               agent.DSBot]:     INFO - 	Units Available: 16
+[2025-09-02 12:54:32,650:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 12:54:33,171:               agent.DSBot]:     INFO - Sent order Order(47498517,Mine,SELL,1@716,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:54:33,265:               agent.DSBot]:     INFO - {47498516: Order(47498516,Others,SELL,1@610,PUB,LIMIT), 47498519: Order(47498519,Others,BUY,3@716,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:54:33,265:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498513,Others,BUY,4@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:33,265:               agent.DSBot]:     INFO - Received BUY order on private market: 3@716
+[2025-09-02 12:54:33,266:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:54:33,266:               agent.DSBot]:     INFO - 	Goal is to BUY 3@706 or lower
+[2025-09-02 12:54:33,266:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498516,Others,SELL,1@610,PUB,LIMIT)
+[2025-09-02 12:54:33,266:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:33,266:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:33,266:               agent.DSBot]:     INFO - 	Cash Available:  21563
+[2025-09-02 12:54:33,266:               agent.DSBot]:     INFO - 	Units Available: 17
+[2025-09-02 12:54:33,266:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:54:33,267:               agent.DSBot]:     INFO - Responding to order Order(47498516,Others,SELL,1@610,PUB,LIMIT)
+[2025-09-02 12:54:33,679:               agent.DSBot]:     INFO - Sent order Order(47498520,Mine,BUY,1@610,PUB,LIMIT) accepted
+[2025-09-02 12:54:33,783:               agent.DSBot]:     INFO - {47498519: Order(47498519,Others,BUY,3@716,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:54:33,784:               agent.DSBot]:     INFO - Responding to order Order(47498519,Others,BUY,3@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:34,212:               agent.DSBot]:     INFO - Sent order Order(47498521,Mine,SELL,1@716,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:54:34,323:               agent.DSBot]:     INFO - {47498523: Order(47498523,Others,BUY,2@716,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:54:34,323:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498519,Others,BUY,3@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:34,323:               agent.DSBot]:     INFO - Received BUY order on private market: 2@716
+[2025-09-02 12:54:34,323:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:54:34,323:               agent.DSBot]:     INFO - 	Goal is to BUY 2@706 or lower
+[2025-09-02 12:54:52,702:               agent.DSBot]:     INFO - {47498523: Order(47498523,Others,BUY,2@716,PVT,LIMIT,PVT_FROM:T033), 47498524: Order(47498524,Others,SELL,3@610,PUB,LIMIT)}
+[2025-09-02 12:54:52,702:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498524,Others,SELL,3@610,PUB,LIMIT)
+[2025-09-02 12:54:52,703:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:52,703:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:52,703:               agent.DSBot]:     INFO - 	Cash Available:  22385
+[2025-09-02 12:54:52,703:               agent.DSBot]:     INFO - 	Units Available: 18
+[2025-09-02 12:54:52,703:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:54:52,703:               agent.DSBot]:     INFO - Responding to order Order(47498524,Others,SELL,3@610,PUB,LIMIT)
+[2025-09-02 12:54:51,132:               agent.DSBot]:     INFO - Sent order Order(47498525,Mine,BUY,1@610,PUB,LIMIT) accepted
+[2025-09-02 12:54:51,158:               agent.DSBot]:     INFO - {47498523: Order(47498523,Others,BUY,2@716,PVT,LIMIT,PVT_FROM:T033), 47498527: Order(47498527,Others,SELL,2@610,PUB,LIMIT)}
+[2025-09-02 12:54:51,158:               agent.DSBot]:     INFO - Responding to order Order(47498523,Others,BUY,2@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:51,158:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498527,Others,SELL,2@610,PUB,LIMIT)
+[2025-09-02 12:54:51,158:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:51,158:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:51,158:               agent.DSBot]:     INFO - 	Cash Available:  22385
+[2025-09-02 12:54:51,159:               agent.DSBot]:     INFO - 	Units Available: 18
+[2025-09-02 12:54:51,159:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 12:54:51,655:               agent.DSBot]:     INFO - Sent order Order(47498528,Mine,SELL,1@716,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:54:51,687:               agent.DSBot]:     INFO - {47498527: Order(47498527,Others,SELL,2@610,PUB,LIMIT), 47498530: Order(47498530,Others,BUY,1@716,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 12:54:51,687:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498523,Others,BUY,2@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:51,687:               agent.DSBot]:     INFO - Received BUY order on private market: 1@716
+[2025-09-02 12:54:51,687:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 12:54:51,688:               agent.DSBot]:     INFO - 	Goal is to BUY 1@706 or lower
+[2025-09-02 12:54:51,688:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498527,Others,SELL,2@610,PUB,LIMIT)
+[2025-09-02 12:54:51,688:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:51,688:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:51,688:               agent.DSBot]:     INFO - 	Cash Available:  21775
+[2025-09-02 12:54:51,688:               agent.DSBot]:     INFO - 	Units Available: 19
+[2025-09-02 12:54:51,689:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 12:54:51,689:               agent.DSBot]:     INFO - Responding to order Order(47498527,Others,SELL,2@610,PUB,LIMIT)
+[2025-09-02 12:54:52,183:               agent.DSBot]:     INFO - Sent order Order(47498531,Mine,BUY,1@610,PUB,LIMIT) accepted
+[2025-09-02 12:54:52,219:               agent.DSBot]:     INFO - {47498530: Order(47498530,Others,BUY,1@716,PVT,LIMIT,PVT_FROM:T033), 47498533: Order(47498533,Others,SELL,1@610,PUB,LIMIT)}
+[2025-09-02 12:54:52,220:               agent.DSBot]:     INFO - Responding to order Order(47498530,Others,BUY,1@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:52,220:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498533,Others,SELL,1@610,PUB,LIMIT)
+[2025-09-02 12:54:52,220:               agent.DSBot]:     INFO - 	Trade Margin:    106
+[2025-09-02 12:54:52,220:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 12:54:52,220:               agent.DSBot]:     INFO - 	Cash Available:  22491
+[2025-09-02 12:54:52,220:               agent.DSBot]:     INFO - 	Units Available: 19
+[2025-09-02 12:54:52,220:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 12:54:52,692:               agent.DSBot]:     INFO - Sent order Order(47498534,Mine,SELL,1@716,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 12:54:52,728:               agent.DSBot]:     INFO - {47498533: Order(47498533,Others,SELL,1@610,PUB,LIMIT)}
+[2025-09-02 12:54:52,728:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498530,Others,BUY,1@716,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 12:54:52,728:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:55:23,237:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-09-02 12:55:23,237:               agent.DSBot]:     INFO - Shutting Down
+[2025-09-02 12:55:23,238:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-09-02 12:58:26 AEST] ===============================
+[2025-09-02 12:58:26,666:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-09-02 12:58:26,667:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-09-02 12:58:27,816:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-09-02 12:58:28,607:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-09-02 12:58:30,052:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-09-02 12:58:30,298:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:18.211.231.38:443
+[2025-09-02 12:58:31,303:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-09-02 12:58:31,304:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-09-02 12:58:31,304:               agent.DSBot]:     INFO - There is a market with id: 2797| Private: False
+[2025-09-02 12:58:31,304:               agent.DSBot]:     INFO - There is a market with id: 2798| Private: True
+[2025-09-02 12:58:31,304:               agent.DSBot]:     INFO - Session: SID:138068:SessionState.OPEN
+[2025-09-02 12:58:31,317:               agent.DSBot]:     INFO - {47498533: Order(47498533,Others,SELL,1@610,PUB,LIMIT)}
+[2025-09-02 12:58:31,318:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:58:39,946:               agent.DSBot]:     INFO - {}
+[2025-09-02 12:58:39,946:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:58:45,338:               agent.DSBot]:     INFO - {47498536: Order(47498536,Mine,BUY,1@293,PUB,LIMIT,REF:'fm-ui 3.4.0')}
+[2025-09-02 12:58:45,339:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:59:00,596:               agent.DSBot]:     INFO - {47498536: Order(47498536,Mine,BUY,1@293,PUB,LIMIT,REF:'fm-ui 3.4.0'), 47498537: Order(47498537,Mine,BUY,1@202,PVT,LIMIT,REF:'fm-ui 3.4.0',PVT_TO:T033)}
+[2025-09-02 12:59:00,596:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:59:00,596:               agent.DSBot]:    ERROR - Order(47498537,Mine,BUY,1@202,PVT,LIMIT,REF:'fm-ui 3.4.0',PVT_TO:T033) open in the private market! Cancelling it...
+[2025-09-02 12:59:00,596:               agent.DSBot]:     INFO - Cancelling order Order(47498537,Mine,BUY,1@202,PVT,LIMIT,REF:'fm-ui 3.4.0',PVT_TO:T033)
+[2025-09-02 12:59:02,214:               agent.DSBot]:     INFO - Sent order Order(47498538,Mine,BUY,1@202,PVT,CANCEL,REF:'fm-ui 3.4.0') accepted
+[2025-09-02 12:59:02,264:               agent.DSBot]:     INFO - {47498536: Order(47498536,Mine,BUY,1@293,PUB,LIMIT,REF:'fm-ui 3.4.0')}
+[2025-09-02 12:59:02,265:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:59:09,886:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-09-02 12:59:09,886:               agent.DSBot]:     INFO - Shutting Down
+[2025-09-02 12:59:09,886:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-09-02 12:59:35 AEST] ===============================
+[2025-09-02 12:59:35,006:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-09-02 12:59:35,007:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-09-02 12:59:36,153:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-09-02 12:59:36,953:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-09-02 12:59:37,725:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-09-02 12:59:37,986:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:18.211.231.38:443
+[2025-09-02 12:59:38,998:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-09-02 12:59:38,999:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-09-02 12:59:38,999:               agent.DSBot]:     INFO - There is a market with id: 2797| Private: False
+[2025-09-02 12:59:39,000:               agent.DSBot]:     INFO - There is a market with id: 2798| Private: True
+[2025-09-02 12:59:39,002:               agent.DSBot]:     INFO - Session: SID:138068:SessionState.OPEN
+[2025-09-02 12:59:39,033:               agent.DSBot]:     INFO - {47498536: Order(47498536,Mine,BUY,1@293,PUB,LIMIT,REF:'fm-ui 3.4.0')}
+[2025-09-02 12:59:39,034:               agent.DSBot]:    ERROR - Order Order(47498536,Mine,BUY,1@293,PUB,LIMIT,REF:'fm-ui 3.4.0') didn't trade in reactive modeCancelling it now...
+[2025-09-02 12:59:39,035:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 12:59:54,842:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-09-02 12:59:54,842:               agent.DSBot]:     INFO - Shutting Down
+[2025-09-02 12:59:54,842:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-09-02 13:00:31 AEST] ===============================
+[2025-09-02 13:00:31,876:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-09-02 13:00:31,877:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-09-02 13:00:33,107:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-09-02 13:00:33,933:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-09-02 13:00:34,746:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-09-02 13:00:34,997:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:18.211.231.38:443
+[2025-09-02 13:00:36,013:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-09-02 13:00:36,014:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-09-02 13:00:36,014:               agent.DSBot]:     INFO - There is a market with id: 2797| Private: False
+[2025-09-02 13:00:36,015:               agent.DSBot]:     INFO - There is a market with id: 2798| Private: True
+[2025-09-02 13:00:36,017:               agent.DSBot]:     INFO - Session: SID:138068:SessionState.OPEN
+[2025-09-02 13:00:36,131:               agent.DSBot]:     INFO - {47498536: Order(47498536,Mine,BUY,1@293,PUB,LIMIT,REF:'fm-ui 3.4.0')}
+[2025-09-02 13:00:36,132:               agent.DSBot]:    ERROR - Order Order(47498536,Mine,BUY,1@293,PUB,LIMIT,REF:'fm-ui 3.4.0') didn't trade in reactive mode! Cancelling it now...
+[2025-09-02 13:00:36,132:               agent.DSBot]:     INFO - Cancelling order Order(47498536,Mine,BUY,1@293,PUB,LIMIT,REF:'fm-ui 3.4.0')
+[2025-09-02 13:00:36,132:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 13:00:36,545:               agent.DSBot]:     INFO - Sent order Order(47498539,Mine,BUY,1@293,PUB,CANCEL,REF:'fm-ui 3.4.0') accepted
+[2025-09-02 13:00:36,655:               agent.DSBot]:     INFO - {}
+[2025-09-02 13:00:36,655:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 13:00:57,973:               agent.DSBot]:     INFO - {47498540: Order(47498540,Others,BUY,7@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:00:57,973:               agent.DSBot]:     INFO - Received BUY order on private market: 7@650
+[2025-09-02 13:00:57,973:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 13:00:57,973:               agent.DSBot]:     INFO - 	Goal is to BUY 7@640 or lower
+[2025-09-02 13:01:09,266:               agent.DSBot]:     INFO - {47498540: Order(47498540,Others,BUY,7@650,PVT,LIMIT,PVT_FROM:T033), 47498541: Order(47498541,Others,SELL,3@431,PUB,LIMIT)}
+[2025-09-02 13:01:09,266:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498541,Others,SELL,3@431,PUB,LIMIT)
+[2025-09-02 13:01:09,266:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:01:09,266:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:01:09,267:               agent.DSBot]:     INFO - 	Cash Available:  22597
+[2025-09-02 13:01:09,267:               agent.DSBot]:     INFO - 	Units Available: 20
+[2025-09-02 13:01:09,267:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 13:01:09,267:               agent.DSBot]:     INFO - Responding to order Order(47498541,Others,SELL,3@431,PUB,LIMIT)
+[2025-09-02 13:01:10,642:               agent.DSBot]:     INFO - Sent order Order(47498542,Mine,BUY,1@431,PUB,LIMIT) accepted
+[2025-09-02 13:01:10,709:               agent.DSBot]:     INFO - {47498540: Order(47498540,Others,BUY,7@650,PVT,LIMIT,PVT_FROM:T033), 47498544: Order(47498544,Others,SELL,2@431,PUB,LIMIT)}
+[2025-09-02 13:01:10,709:               agent.DSBot]:     INFO - Responding to order Order(47498540,Others,BUY,7@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:01:10,709:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498544,Others,SELL,2@431,PUB,LIMIT)
+[2025-09-02 13:01:10,709:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:01:10,710:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:01:10,710:               agent.DSBot]:     INFO - 	Cash Available:  22597
+[2025-09-02 13:01:10,710:               agent.DSBot]:     INFO - 	Units Available: 20
+[2025-09-02 13:01:10,710:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 13:01:11,169:               agent.DSBot]:     INFO - Sent order Order(47498545,Mine,SELL,1@650,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 13:01:11,230:               agent.DSBot]:     INFO - {47498544: Order(47498544,Others,SELL,2@431,PUB,LIMIT), 47498547: Order(47498547,Others,BUY,6@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:01:11,230:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498540,Others,BUY,7@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:01:11,230:               agent.DSBot]:     INFO - Received BUY order on private market: 6@650
+[2025-09-02 13:01:11,230:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 13:01:11,230:               agent.DSBot]:     INFO - 	Goal is to BUY 6@640 or lower
+[2025-09-02 13:01:11,231:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498544,Others,SELL,2@431,PUB,LIMIT)
+[2025-09-02 13:01:11,231:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:01:11,231:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:01:11,231:               agent.DSBot]:     INFO - 	Cash Available:  22166
+[2025-09-02 13:01:11,231:               agent.DSBot]:     INFO - 	Units Available: 21
+[2025-09-02 13:01:11,231:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 13:01:11,231:               agent.DSBot]:     INFO - Responding to order Order(47498544,Others,SELL,2@431,PUB,LIMIT)
+[2025-09-02 13:01:11,699:               agent.DSBot]:     INFO - Sent order Order(47498548,Mine,BUY,1@431,PUB,LIMIT) accepted
+[2025-09-02 13:01:11,748:               agent.DSBot]:     INFO - {47498547: Order(47498547,Others,BUY,6@650,PVT,LIMIT,PVT_FROM:T033), 47498550: Order(47498550,Others,SELL,1@431,PUB,LIMIT)}
+[2025-09-02 13:01:11,748:               agent.DSBot]:     INFO - Responding to order Order(47498547,Others,BUY,6@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:01:11,748:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498550,Others,SELL,1@431,PUB,LIMIT)
+[2025-09-02 13:01:11,748:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:01:11,748:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:01:11,748:               agent.DSBot]:     INFO - 	Cash Available:  22816
+[2025-09-02 13:01:11,749:               agent.DSBot]:     INFO - 	Units Available: 21
+[2025-09-02 13:01:11,749:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 13:01:12,231:               agent.DSBot]:     INFO - Sent order Order(47498551,Mine,SELL,1@650,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 13:01:12,263:               agent.DSBot]:     INFO - {47498550: Order(47498550,Others,SELL,1@431,PUB,LIMIT), 47498553: Order(47498553,Others,BUY,5@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:01:12,263:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498547,Others,BUY,6@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:01:12,263:               agent.DSBot]:     INFO - Received BUY order on private market: 5@650
+[2025-09-02 13:01:12,263:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 13:01:12,264:               agent.DSBot]:     INFO - 	Goal is to BUY 5@640 or lower
+[2025-09-02 13:01:12,264:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498550,Others,SELL,1@431,PUB,LIMIT)
+[2025-09-02 13:01:12,264:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:01:12,264:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:01:12,264:               agent.DSBot]:     INFO - 	Cash Available:  22385
+[2025-09-02 13:01:12,264:               agent.DSBot]:     INFO - 	Units Available: 22
+[2025-09-02 13:01:12,265:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 13:01:12,265:               agent.DSBot]:     INFO - Responding to order Order(47498550,Others,SELL,1@431,PUB,LIMIT)
+[2025-09-02 13:01:12,743:               agent.DSBot]:     INFO - Sent order Order(47498554,Mine,BUY,1@431,PUB,LIMIT) accepted
+[2025-09-02 13:01:12,772:               agent.DSBot]:     INFO - {47498553: Order(47498553,Others,BUY,5@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:01:12,772:               agent.DSBot]:     INFO - Responding to order Order(47498553,Others,BUY,5@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:01:13,284:               agent.DSBot]:     INFO - Sent order Order(47498555,Mine,SELL,1@650,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 13:01:13,285:               agent.DSBot]:     INFO - {47498557: Order(47498557,Others,BUY,4@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:01:13,286:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498553,Others,BUY,5@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:01:13,286:               agent.DSBot]:     INFO - Received BUY order on private market: 4@650
+[2025-09-02 13:01:13,286:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 13:01:13,287:               agent.DSBot]:     INFO - 	Goal is to BUY 4@640 or lower
+[2025-09-02 13:01:21,680:               agent.DSBot]:     INFO - {47498557: Order(47498557,Others,BUY,4@650,PVT,LIMIT,PVT_FROM:T033), 47498558: Order(47498558,Others,SELL,5@431,PUB,LIMIT)}
+[2025-09-02 13:01:21,680:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498558,Others,SELL,5@431,PUB,LIMIT)
+[2025-09-02 13:01:21,680:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:01:21,680:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:01:21,680:               agent.DSBot]:     INFO - 	Cash Available:  23254
+[2025-09-02 13:01:21,680:               agent.DSBot]:     INFO - 	Units Available: 23
+[2025-09-02 13:01:21,681:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 13:01:21,681:               agent.DSBot]:     INFO - Responding to order Order(47498558,Others,SELL,5@431,PUB,LIMIT)
+[2025-09-02 13:01:21,969:               agent.DSBot]:     INFO - Sent order Order(47498559,Mine,BUY,1@431,PUB,LIMIT) accepted
+[2025-09-02 13:01:21,990:               agent.DSBot]:     INFO - {47498557: Order(47498557,Others,BUY,4@650,PVT,LIMIT,PVT_FROM:T033), 47498561: Order(47498561,Others,SELL,4@431,PUB,LIMIT)}
+[2025-09-02 13:01:21,991:               agent.DSBot]:     INFO - Responding to order Order(47498557,Others,BUY,4@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:01:21,991:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498561,Others,SELL,4@431,PUB,LIMIT)
+[2025-09-02 13:01:21,991:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:01:21,991:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:01:21,991:               agent.DSBot]:     INFO - 	Cash Available:  23254
+[2025-09-02 13:01:21,991:               agent.DSBot]:     INFO - 	Units Available: 23
+[2025-09-02 13:01:21,991:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 13:01:22,493:               agent.DSBot]:     INFO - Sent order Order(47498562,Mine,SELL,1@650,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 13:01:22,503:               agent.DSBot]:     INFO - {47498561: Order(47498561,Others,SELL,4@431,PUB,LIMIT), 47498564: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:01:22,504:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498557,Others,BUY,4@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:01:22,504:               agent.DSBot]:     INFO - Received BUY order on private market: 3@650
+[2025-09-02 13:01:22,504:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 13:01:22,504:               agent.DSBot]:     INFO - 	Goal is to BUY 3@640 or lower
+[2025-09-02 13:01:22,504:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498561,Others,SELL,4@431,PUB,LIMIT)
+[2025-09-02 13:01:22,505:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:01:22,505:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:01:22,505:               agent.DSBot]:     INFO - 	Cash Available:  22823
+[2025-09-02 13:01:22,505:               agent.DSBot]:     INFO - 	Units Available: 24
+[2025-09-02 13:01:22,505:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 13:01:22,505:               agent.DSBot]:     INFO - Responding to order Order(47498561,Others,SELL,4@431,PUB,LIMIT)
+[2025-09-02 13:01:22,996:               agent.DSBot]:     INFO - Sent order Order(47498566,Mine,BUY,1@431,PUB,LIMIT) accepted
+[2025-09-02 13:01:23,013:               agent.DSBot]:     INFO - {47498564: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033), 47498566: Order(47498566,Mine,BUY,1@431,PUB,LIMIT)}
+[2025-09-02 13:01:23,014:               agent.DSBot]:    ERROR - Order Order(47498566,Mine,BUY,1@431,PUB,LIMIT) didn't trade in reactive mode! Cancelling it now...
+[2025-09-02 13:01:23,014:               agent.DSBot]:     INFO - Cancelling order Order(47498566,Mine,BUY,1@431,PUB,LIMIT)
+[2025-09-02 13:01:23,014:               agent.DSBot]:     INFO - {47498564: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033), 47498566: Order(47498566,Mine,BUY,1@431,PUB,LIMIT)}
+[2025-09-02 13:01:23,014:               agent.DSBot]:    ERROR - Order Order(47498566,Mine,BUY,1@431,PUB,LIMIT) didn't trade in reactive mode! Cancelling it now...
+[2025-09-02 13:01:23,014:               agent.DSBot]:     INFO - Cancelling order Order(47498566,Mine,BUY,1@431,PUB,LIMIT)
+[2025-09-02 13:01:23,524:               agent.DSBot]:     INFO - Sent order Order(47498567,Mine,BUY,1@431,PUB,CANCEL) accepted
+[2025-09-02 13:01:23,537:               agent.DSBot]:     INFO - {47498564: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:01:23,783:               agent.DSBot]:     INFO - Sent order Order(47498568,Mine,BUY,1@431,PUB,CANCEL) accepted
+[2025-09-02 13:01:23,850:               agent.DSBot]:     INFO - {47498564: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:02:13,405:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-09-02 13:02:13,406:               agent.DSBot]:     INFO - Shutting Down
+[2025-09-02 13:02:13,406:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
+
+=============================== Log Started [2025-09-02 13:15:09 AEST] ===============================
+[2025-09-02 13:15:09,503:               agent.DSBot]:     INFO - Using FM Client version: 5.2.8-beta
+[2025-09-02 13:15:09,504:               agent.DSBot]:     INFO - Attempting to log into AHM as coltish-charity|tmmoh@student.unimelb.edu.au
+[2025-09-02 13:15:10,654:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AlgoHost
+[2025-09-02 13:15:11,483:               agent.DSBot]:     INFO - Establishing realtime WebSocket connection to AHM
+[2025-09-02 13:15:12,312:               agent.DSBot]:     INFO - Requesting initial information for marketplace `1573`
+[2025-09-02 13:15:12,558:               ws.FM.DSBot]:     INFO - Connected to AHM Server tcp4:18.211.231.38:443
+[2025-09-02 13:15:13,550:               agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2025-09-02 13:15:13,551:               agent.DSBot]:     INFO - I am DSBot(User(51947,Taher,Mohamed,tmmoh@student.unimelb.edu.au,[USER]))
+[2025-09-02 13:15:13,552:               agent.DSBot]:     INFO - There is a market with id: 2797| Private: False
+[2025-09-02 13:15:13,552:               agent.DSBot]:     INFO - There is a market with id: 2798| Private: True
+[2025-09-02 13:15:13,554:               agent.DSBot]:     INFO - Session: SID:138068:SessionState.OPEN
+[2025-09-02 13:15:13,667:               agent.DSBot]:     INFO - {47498564: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:15:13,668:               agent.DSBot]:     INFO - Received BUY order on private market: 3@650
+[2025-09-02 13:15:13,668:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 13:15:13,668:               agent.DSBot]:     INFO - 	Goal is to BUY 3@640 or lower
+[2025-09-02 13:15:34,299:               agent.DSBot]:     INFO - {47498564: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033), 47498569: Order(47498569,Others,SELL,2@431,PUB,LIMIT)}
+[2025-09-02 13:15:34,300:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498569,Others,SELL,2@431,PUB,LIMIT)
+[2025-09-02 13:15:34,300:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:15:34,300:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:15:34,300:               agent.DSBot]:     INFO - 	Cash Available:  23473
+[2025-09-02 13:15:34,300:               agent.DSBot]:     INFO - 	Units Available: 24
+[2025-09-02 13:15:34,300:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 13:15:34,300:               agent.DSBot]:     INFO - Responding to order Order(47498569,Others,SELL,2@431,PUB,LIMIT)
+[2025-09-02 13:15:35,651:               agent.DSBot]:     INFO - Sent order Order(47498570,Mine,BUY,1@431,PUB,LIMIT) accepted
+[2025-09-02 13:15:35,738:               agent.DSBot]:     INFO - {47498564: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033), 47498572: Order(47498572,Others,SELL,1@431,PUB,LIMIT)}
+[2025-09-02 13:15:35,738:               agent.DSBot]:     INFO - Responding to order Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:15:35,739:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498572,Others,SELL,1@431,PUB,LIMIT)
+[2025-09-02 13:15:35,739:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:15:35,739:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:15:35,739:               agent.DSBot]:     INFO - 	Cash Available:  23473
+[2025-09-02 13:15:35,739:               agent.DSBot]:     INFO - 	Units Available: 24
+[2025-09-02 13:15:35,739:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 13:15:36,186:               agent.DSBot]:     INFO - Sent order Order(47498573,Mine,SELL,1@650,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 13:15:36,245:               agent.DSBot]:     INFO - {47498572: Order(47498572,Others,SELL,1@431,PUB,LIMIT), 47498575: Order(47498575,Others,BUY,2@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:15:36,245:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498564,Others,BUY,3@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:15:36,245:               agent.DSBot]:     INFO - Received BUY order on private market: 2@650
+[2025-09-02 13:15:36,245:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 13:15:36,245:               agent.DSBot]:     INFO - 	Goal is to BUY 2@640 or lower
+[2025-09-02 13:15:36,246:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498572,Others,SELL,1@431,PUB,LIMIT)
+[2025-09-02 13:15:36,246:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:15:36,246:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:15:36,246:               agent.DSBot]:     INFO - 	Cash Available:  23042
+[2025-09-02 13:15:36,246:               agent.DSBot]:     INFO - 	Units Available: 25
+[2025-09-02 13:15:36,246:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 13:15:36,246:               agent.DSBot]:     INFO - Responding to order Order(47498572,Others,SELL,1@431,PUB,LIMIT)
+[2025-09-02 13:15:36,697:               agent.DSBot]:     INFO - Sent order Order(47498576,Mine,BUY,1@431,PUB,LIMIT) accepted
+[2025-09-02 13:15:36,752:               agent.DSBot]:     INFO - {47498575: Order(47498575,Others,BUY,2@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:15:36,753:               agent.DSBot]:     INFO - Responding to order Order(47498575,Others,BUY,2@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:15:37,228:               agent.DSBot]:     INFO - Sent order Order(47498577,Mine,SELL,1@650,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 13:15:37,274:               agent.DSBot]:     INFO - {47498579: Order(47498579,Others,BUY,1@650,PVT,LIMIT,PVT_FROM:T033)}
+[2025-09-02 13:15:37,275:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498575,Others,BUY,2@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:15:37,276:               agent.DSBot]:     INFO - Received BUY order on private market: 1@650
+[2025-09-02 13:15:37,276:               agent.DSBot]:     INFO - 	Target Profit Margin: 10
+[2025-09-02 13:15:37,276:               agent.DSBot]:     INFO - 	Goal is to BUY 1@640 or lower
+[2025-09-02 13:15:43,794:               agent.DSBot]:     INFO - {47498579: Order(47498579,Others,BUY,1@650,PVT,LIMIT,PVT_FROM:T033), 47498580: Order(47498580,Others,SELL,2@431,PUB,LIMIT)}
+[2025-09-02 13:15:43,795:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498580,Others,SELL,2@431,PUB,LIMIT)
+[2025-09-02 13:15:43,795:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:15:43,795:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:15:43,795:               agent.DSBot]:     INFO - 	Cash Available:  23911
+[2025-09-02 13:15:43,795:               agent.DSBot]:     INFO - 	Units Available: 26
+[2025-09-02 13:15:43,795:               agent.DSBot]:     INFO - 	All conditions met to trade!
+[2025-09-02 13:15:43,795:               agent.DSBot]:     INFO - Responding to order Order(47498580,Others,SELL,2@431,PUB,LIMIT)
+[2025-09-02 13:15:44,131:               agent.DSBot]:     INFO - Sent order Order(47498581,Mine,BUY,1@431,PUB,LIMIT) accepted
+[2025-09-02 13:15:44,212:               agent.DSBot]:     INFO - {47498579: Order(47498579,Others,BUY,1@650,PVT,LIMIT,PVT_FROM:T033), 47498583: Order(47498583,Others,SELL,1@431,PUB,LIMIT)}
+[2025-09-02 13:15:44,212:               agent.DSBot]:     INFO - Responding to order Order(47498579,Others,BUY,1@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:15:44,212:               agent.DSBot]:     INFO - I am a BUYER with profitable order Order(47498583,Others,SELL,1@431,PUB,LIMIT)
+[2025-09-02 13:15:44,212:               agent.DSBot]:     INFO - 	Trade Margin:    219
+[2025-09-02 13:15:44,213:               agent.DSBot]:     INFO - 	Required Margin: 10
+[2025-09-02 13:15:44,213:               agent.DSBot]:     INFO - 	Cash Available:  23911
+[2025-09-02 13:15:44,213:               agent.DSBot]:     INFO - 	Units Available: 26
+[2025-09-02 13:15:44,213:               agent.DSBot]:     INFO - 	Still waiting on server response, cannot trade
+[2025-09-02 13:15:44,642:               agent.DSBot]:     INFO - Sent order Order(47498584,Mine,SELL,1@650,PVT,LIMIT,PVT_TO:T033) accepted
+[2025-09-02 13:15:44,723:               agent.DSBot]:     INFO - {47498583: Order(47498583,Others,SELL,1@431,PUB,LIMIT)}
+[2025-09-02 13:15:44,723:               agent.DSBot]:  WARNING - Original incentive order is no longer available: Order(47498579,Others,BUY,1@650,PVT,LIMIT,PVT_FROM:T033)
+[2025-09-02 13:15:44,724:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 13:15:50,994:               agent.DSBot]:     INFO - {}
+[2025-09-02 13:15:50,995:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 13:15:55,418:               agent.DSBot]:     INFO - {47498586: Order(47498586,Mine,BUY,1@202,PVT,LIMIT,REF:'fm-ui 3.4.0',PVT_TO:T033)}
+[2025-09-02 13:15:55,418:               agent.DSBot]:    ERROR - Private Order Order(47498586,Mine,BUY,1@202,PVT,LIMIT,REF:'fm-ui 3.4.0',PVT_TO:T033) open in the private market! Cancelling it...
+[2025-09-02 13:15:55,418:               agent.DSBot]:     INFO - Cancelling order Order(47498586,Mine,BUY,1@202,PVT,LIMIT,REF:'fm-ui 3.4.0',PVT_TO:T033)
+[2025-09-02 13:15:55,419:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 13:15:55,786:               agent.DSBot]:     INFO - Sent order Order(47498587,Mine,BUY,1@202,PVT,CANCEL,REF:'fm-ui 3.4.0') accepted
+[2025-09-02 13:15:55,838:               agent.DSBot]:     INFO - {}
+[2025-09-02 13:15:55,838:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 13:16:18,222:               agent.DSBot]:     INFO - {47498588: Order(47498588,Mine,BUY,1@0,PUB,LIMIT,REF:'fm-ui 3.4.0')}
+[2025-09-02 13:16:18,223:               agent.DSBot]:    ERROR - Public Order Order(47498588,Mine,BUY,1@0,PUB,LIMIT,REF:'fm-ui 3.4.0') didn't trade in reactive mode! Cancelling it...
+[2025-09-02 13:16:18,223:               agent.DSBot]:     INFO - Cancelling order Order(47498588,Mine,BUY,1@0,PUB,LIMIT,REF:'fm-ui 3.4.0')
+[2025-09-02 13:16:18,223:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 13:16:19,441:               agent.DSBot]:     INFO - Sent order Order(47498589,Mine,BUY,1@0,PUB,CANCEL,REF:'fm-ui 3.4.0') accepted
+[2025-09-02 13:16:19,456:               agent.DSBot]:     INFO - {}
+[2025-09-02 13:16:19,456:               agent.DSBot]:  WARNING - Bot role not set! There currently aren't any active private incentives
+[2025-09-02 13:16:26,308:               agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2025-09-02 13:16:26,309:               agent.DSBot]:     INFO - Shutting Down
+[2025-09-02 13:16:26,309:               agent.DSBot]:     INFO - I have been asked to stop! [94m[1m:-([0m
