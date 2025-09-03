@@ -98,20 +98,6 @@ class DSBot(Agent):
         self._waiting_for_server = False
         self.inform(f"Sent order {order} accepted")
 
-        if order.market == self._public_market:
-            if order.order_type == OrderType.LIMIT:
-                self._arbitrage_state = ArbitrageState.PUBLIC
-            if order.order_type == OrderType.CANCEL:
-                # self._public_order_pending = False
-                pass
-
-        if order.market == self._private_market:
-            if order.order_type == OrderType.LIMIT:
-                self._arbitrage_state = ArbitrageState.PRIVATE
-            if order.order_type == OrderType.CANCEL:
-                pass
-            pass
-
     def order_rejected(self, info, order: Order) -> None:
         self._waiting_for_server = False
         self.warning(f"Sent order {order} rejected {info}")
@@ -120,21 +106,22 @@ class DSBot(Agent):
         if order.market == self._public_market:
             if order.order_type == OrderType.LIMIT:
                 self._arbitrage_state = ArbitrageState.NONE
+
                 if self._bot_type == BotType.REACTIVE:
                     if tradeable_order := self._check_trade_opportunity():
                         self._arbitrage_state = ArbitrageState.PUBLIC
                         self._trade_order(tradeable_order)
                         # Potential infinite loop?
+
             if order.order_type == OrderType.CANCEL:
                 pass
         
         if order.market == self._private_market:
-            # Failure assumed to not happen
+            # Failure assumed to not happen, but just in case
             if order.order_type == OrderType.LIMIT:
                 self._arbitrage_state = ArbitrageState.PUBLIC
             if order.order_type == OrderType.CANCEL:
                 pass
-            pass
 
     def received_orders(self, orders: list[Order]) -> None:
         self.inform(f"")
@@ -157,8 +144,6 @@ class DSBot(Agent):
                 self.error(f"Public Order {o} didn't trade in reactive mode!")
                 self.error(f"\tCancelling it...")
                 self._cancel_order(o)
-
-
 
         # We want to handle private orders first to make sure info is updated
         private_orders = []
@@ -219,6 +204,11 @@ class DSBot(Agent):
             for order in Order.my_current().values():
                 self._cancel_order(order)
 
+            return
+
+        if order.mine and order.is_cancelled \
+            and self._arbitrage_state == ArbitrageState.PRIVATE:
+            self._arbitrage_state = ArbitrageState.PUBLIC
             return
 
         if order.mine and order.has_traded \
@@ -402,7 +392,6 @@ class DSBot(Agent):
         # Done this way simply to maintain the function signature
         self.inform(self._status)
 
-
     # ----- Verification Private Methods -----
     def _check_trade_opportunity(self) -> Optional[Order]:
         if not self._check_role_and_target():
@@ -480,7 +469,6 @@ class DSBot(Agent):
         self._status = f"\tAll conditions met to trade!"
         return True
 
-
     def _check_role_and_target(self) -> bool:
         if self.role is None:
             self.warning(
@@ -490,37 +478,6 @@ class DSBot(Agent):
             return False
 
         return True
-
-
-
-'''
-1. Is it correct to assume that there will only ever be one incentive order
-    in the private market?
-
-2. If there are trades available at a better price (bid/ask), should we still
-    identify new profitable trades and react, identify but not react, or not
-    identify at all?
-    
-3. When reacting to an order, is it assumed that they will only be for one unit
-    or do we need to handle any cases where they are for multiple units, and if
-    so, are we allowed to react by placing orders for multiple units to fill or
-    only one at a time?
-
-4. Is this multithreaded async? Can I busy wait in one function for another
-
-5. Can we assume that once order is accepted, order book reflects immediately?
-
-6. I'm always interacting in the public market first, which means I might not
-    have enough assets to trade that I *could* get by trading in private first
-
-7. Can we modify print trade opportunity
-
-8. Do we have to track _role or can it stay just a property?
-
-9. If my bot disconnects and misses an incentive refresh, that
-
-'''
-
 
 if __name__ == "__main__":
     FM_ACCOUNT = "coltish-charity"
